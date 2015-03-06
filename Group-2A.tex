@@ -1,4 +1,5 @@
 \documentclass[a4paper]{article}
+\usepackage[hidelinks]{hyperref}
 
 \title{Architectural Design
 \\COS 301 Buzz Project
@@ -15,7 +16,7 @@
 \\Lutfiyya Razak 10198408
 \\
 \\
-\textit{https://github.com/Isabel01/COS-301-2a-Round-2}
+\url{https://github.com/Isabel01/COS-301-2a-Round-2}
 \\
 \\ University of Pretoria}
 
@@ -124,8 +125,22 @@ In this section we are looking at the Integration channels between the different
 \begin{itemize}
 	\item HTTPS (Hypertext Transfer Protocol Secure) is a protocol that allows safe and secure transfer of data over a network. It could be used to transfer the SOAP messages between the two systems.
 	\item SOAP (Simple Access Project Protocol) allows programs that run on different operating system to communicate using HTTP and XML. It is platform and language independent, It is useful in handling asynchronous processing and it supports many protocols and technologies.
+	\item LDAP (Lightweight Directory Access Protocol) is typically  used to authenticate a user’s details, in this case, lecturer’s, teaching assistant’s or student’s credentials when logging in. LDAP can also be used to retrieve a student’s personal details, to retrieve courses a student is taking and also used to retrieve a class list for a specific module.
 \end{itemize}
-
+\textbf{API specifications used in the integration of the systems}
+\begin{itemize}
+	\item JPA (Java Persistence API) reduces interaction with the database and it makes use of ORM to convert data from object type to relational type and vice versa. ORM maps objects to its data in the database.
+	\item JPQL (Java Persistence Query Language) creates queries against entities to store in a relational database.
+	\item JSF (JavaServer Faces) enables reuse and extension of existing standard UI components. Its based on mvc architecture for separating logic.
+\end{itemize}
+\textbf{Quality requirements that can be achieved through the implementation of the access channels mentioned}
+\begin{itemize}
+	\item Reliability so that the system is online as much as possible and that data transfer isn’t easily corruptible and that the transfer is fast.
+	\item Security of user data being transferred.
+	\item Scalable so that a large amount of users’ data can be transferred to and from the systems.
+	\item Maintainable, the integration with the system must be easily maintained.
+	\item Testable, All services offered by the system must be testable through integration testing.
+\end{itemize}
 
 \subsection{Architectural Constraints}
 
