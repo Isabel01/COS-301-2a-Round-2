@@ -112,6 +112,20 @@ A brief study of quality requirements in software engineering has shown that man
 
 
 \subsection{Integration and Access Channel Requirements}
+In this section we are looking at the Integration channels between the different systems that will make up the Buzz system. The integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these access channels we need to look at the different access channels that we have available to us, the protocols and API’s needed to create these channels as well as the quality requirements we are attempting to achieve through the use of these integration channels.
+\\
+\\\textbf{Integration channels that can be considered for use in the Buzz project}
+\begin{itemize}
+	\item The Computer Science(CS) Lightweight Directory Access Protocol (LDAP) repository could be used to retrieve student details and class lists.
+	\item The Computer Science(CS) MySQL database could be used to access module information from the database
+	\item Details regarding the integration with the databases can be obtained from the tech team 
+\end{itemize}
+\textbf{Integration channels that can be considered for use in the Buzz project}
+\begin{itemize}
+	\item HTTPS (Hypertext Transfer Protocol Secure) is a protocol that allows safe and secure transfer of data over a network. It could be used to transfer the SOAP messages between the two systems.
+	\item SOAP (Simple Access Project Protocol) allows programs that run on different operating system to communicate using HTTP and XML. It is platform and language independent, It is useful in handling asynchronous processing and it supports many protocols and technologies.
+\end{itemize}
+
 
 \subsection{Architectural Constraints}
 
