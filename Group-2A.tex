@@ -194,6 +194,20 @@ Using the Layered pattern will improve on the following non-functional requireme
 
 
 \section{Architectural Tactics or Strategies}
+This section describes the Architectural tactics/strategies which are the conscious design decisions that will influence how the quality requirements are realized in the system. Listed below are the architectural tactics/strategies that we chose to implement in our system as well as which quality requirements they influence and how we plan on implementing them in our system. 
+\\
+\\\textbf{Course grained services}
+\\We will be looking at using course grained services to help realize the performance, scalability, reliability, integrability, reusability, testability and affordability of the system. Coarse grained services is when you group together smaller components and or functions and present it to the user as one big service. This helps with reliability since the users of the system don’t have access to all the smaller private functions, also you can add as many systems as needed since they all will likely just need access to the coarse grained services instead of all the functions the system has to offer.
+This strategy will be realized through the construction of the code. Instead of just writing multiple smaller functions we would also write a wrapper functions to encapsulate some of the other functions to make the course grained services. 
+\\
+\\\textbf{Persistent messaging}
+\\The second tactic that we will use is Persistent messaging to help realize scalability, reliability, auditability, integrability, flexibility and maintainability. It also negatively affects performance, affordability and deployment. Persistent messaging is when the messages that are being passed between the systems are sored to disk when send until all the participants have responded that they have received the message. This is done to ensure that the messages will still be delivered even if one of the integration channels breakdown.
+This strategy will be realized through the use of a dedicate message broker to facilitate the storage and transfer of messages between the systems. 
+\\
+\\\textbf{Request/connection dropping}
+\\The third tactic that we will be using is Request/connection dropping. This tactic will help to realize scalability, reliability and security. Request/connection dropping is when the connection is closed as soon as the request has been handled in order to lower the network traffic being generated. This allows for more users to use the system at the same time as well as ensures security since if there is no open connections remaining open the risk of someone hacking into a part of the system housing confidential user data is drastically reduces. 
+This strategy will be realised through the use of asynchronous threads that close the connection from the client’s side as soon as all the data has been received or from the server’s side if it is going to take a long time to get the data ready for transfer. Then the connection is opened again when the data is ready to be transferred to the client. 
+
 
 \section{Use of Reference Architectures and Frameworks}
 
