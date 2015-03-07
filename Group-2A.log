@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.26)  7 MAR 2015 11:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.26)  7 MAR 2015 11:29
 entering extended mode
 **C:/Users/Bella/Desktop/git2/Group-2A.tex
 (C:/Users/Bella/Desktop/git2/Group-2A.tex
@@ -260,13 +260,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 )
 \tf@toc=\write4
  [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 69.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
  [2]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -275,22 +275,22 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 85--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 85--90
 
  []
 
@@ -299,12 +299,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
  []
 
@@ -321,17 +321,17 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--102
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--102
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
@@ -339,26 +339,26 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--112
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 [5]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
+
+ []
+
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ñ in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
@@ -366,29 +366,28 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 
-Overfull \hbox (1.32869pt too wide) in paragraph at lines 126--129
+Overfull \hbox (1.32869pt too wide) in paragraph at lines 128--131
 \OT1/cmr/bx/n/10 Integration chan-nels that can be con-sid-ered for use in the 
 Buzz project 
  []
 
 
-Overfull \hbox (2.99942pt too wide) in paragraph at lines 130--131
+Overfull \hbox (2.99942pt too wide) in paragraph at lines 132--133
 []\OT1/cmr/m/n/10 The Com-puter Sci-ence(CS) Lightweight Di-rec-tory Ac-cess Pr
 o-to-col (LDAP)
  []
 
-
-Overfull \hbox (1.32869pt too wide) in paragraph at lines 134--135
+[6]
+Overfull \hbox (1.32869pt too wide) in paragraph at lines 136--137
 \OT1/cmr/bx/n/10 Integration chan-nels that can be con-sid-ered for use in the 
 Buzz project 
  []
 
-[6]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -410,8 +409,8 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
@@ -428,43 +427,43 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 Package epstopdf Info: Source file: <layers.eps>
-(epstopdf)                    date: 2015-03-07 11:08:01
+(epstopdf)                    date: 2015-03-07 11:28:52
 (epstopdf)                    size: 45147 bytes
 (epstopdf)             Output file: <layers-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-03-07 11:08:01
+(epstopdf)                    date: 2015-03-07 11:28:52
 (epstopdf)                    size: 12420 bytes
 (epstopdf)             Command: <epstopdf --outfile=layers-eps-converted-to.pdf
  layers.eps>
-(epstopdf)             \includegraphics on input line 180.
+(epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
 <layers-eps-converted-to.pdf, id=162, 557.08125pt x 171.64125pt>
 File: layers-eps-converted-to.pdf Graphic file (type pdf)
 
 <use layers-eps-converted-to.pdf>
-Package pdftex.def Info: layers-eps-converted-to.pdf used on input line 180.
+Package pdftex.def Info: layers-eps-converted-to.pdf used on input line 182.
 (pdftex.def)             Requested size: 345.0pt x 106.2986pt.
  [8]
 Package epstopdf Info: Source file: <mvc.eps>
-(epstopdf)                    date: 2015-03-07 11:08:01
+(epstopdf)                    date: 2015-03-07 11:28:52
 (epstopdf)                    size: 43496 bytes
 (epstopdf)             Output file: <mvc-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-03-07 11:08:01
+(epstopdf)                    date: 2015-03-07 11:28:52
 (epstopdf)                    size: 11348 bytes
 (epstopdf)             Command: <epstopdf --outfile=mvc-eps-converted-to.pdf mv
 c.eps>
-(epstopdf)             \includegraphics on input line 190.
+(epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 
 <mvc-eps-converted-to.pdf, id=167, 557.08125pt x 179.67125pt>
 File: mvc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use mvc-eps-converted-to.pdf>
-Package pdftex.def Info: mvc-eps-converted-to.pdf used on input line 190.
+Package pdftex.def Info: mvc-eps-converted-to.pdf used on input line 192.
 (pdftex.def)             Requested size: 345.0pt x 111.27164pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -479,7 +478,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
@@ -493,17 +492,17 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--222
 
  []
 
@@ -512,18 +511,18 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.220 
+l.222 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.220 
+l.222 
        <C:/Users/Bella/Desktop/git2/layers-eps-converted-to.pdf> <C:/Users/Bell
 a/Desktop/git2/mvc-eps-converted-to.pdf>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 225.
+(hyperref)                than one, level fixed on input line 227.
 
 [10]
 Missing character: There is no ‚ in font cmr10!
@@ -536,24 +535,24 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
  [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
  (C:\Users\Bella\Desktop\git2\Group-2A.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `Group-2A.out' has not changed.
 (rerunfilecheck)             Checksum: F35D4840B0DD728911D61D222FBB8DC0;1628.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
  5206 strings out of 493921
  77315 string characters out of 3147282
- 157649 words of memory out of 3000000
+ 158649 words of memory out of 3000000
  8438 multiletter control sequences out of 15000+200000
  8064 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -566,7 +565,7 @@ nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmtt12.pfb>
-Output written on Group-2A.pdf (13 pages, 179014 bytes).
+Output written on Group-2A.pdf (13 pages, 179201 bytes).
 PDF statistics:
  279 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
