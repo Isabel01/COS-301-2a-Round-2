@@ -219,6 +219,17 @@ This strategy will be realized through the use of a dedicate message broker to f
 \\\textbf{Request/connection dropping}
 \\The third tactic that we will be using is Request/connection dropping. This tactic will help to realize scalability, reliability and security. Request/connection dropping is when the connection is closed as soon as the request has been handled in order to lower the network traffic being generated. This allows for more users to use the system at the same time as well as ensures security since if there is no open connections remaining open the risk of someone hacking into a part of the system housing confidential user data is drastically reduces. 
 This strategy will be realised through the use of asynchronous threads that close the connection from the client’s side as soon as all the data has been received or from the server’s side if it is going to take a long time to get the data ready for transfer. Then the connection is opened again when the data is ready to be transferred to the client. 
+\\
+\\\textbf{Run-time}
+\\The fourth tactic that we will be using is the run-time tactic. This tactic will help to realize usability. Run-time tactic is when the system is executing and the user gets continuous feedback as to what the system is doing. It gives the user the ability to issue usability commands such as cancel, undo, aggregate and a lot more.  This tactic is both user initiative and system initiative. An example of system initiative is to maintain user or system models
+This strategy will be realized through continuous feedback to the user which would improve usability.
+\\
+\\\textbf{Manage Input/Ouput}
+\\Another tactic that we will be using is managing input and output tactic. This tactic will help realize testability in the system. Executing a test requires input to the system and to capture the output. This is called test harness. There are three tactics in which we could manage input and output. The first tactic is record which captures information and uses it as test input. The second tactic is to separate interface from implementation. This allows substitution of implementations for various testing purposes. The last tactic is specialize access to interfaces. There is a hierarchy of test interfaces that can be applied at any level and testing functionality can observe the response of the test.
+This strategy will be realized through managing the inputs and outputs of the tests, where input of one component is the output of another component.
+\\
+\\\textbf{Separation of concerns}
+\\The last tactic that we will be using is separation of concerns. This tactic will help realize extensibility in the system. This tactic each component is only concerned with only one set of cohesive responsibilities. With this tactic, the system as a whole will become more stable and therefore increase maintainability. The increase in maintainability and extensibility of the system will lead to identifying problems becoming easier and resolution becoming faster.
 
 
 \section{Use of Reference Architectures and Frameworks}
