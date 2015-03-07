@@ -102,6 +102,14 @@ A brief study of quality requirements in software engineering has shown that man
 \\
 \\Scalability refers to a software package’s ability to handle increased workloads, eg. a larger user base, without adding resources to the system, and refers to both computing hardware and software (WEINSTOCK, GOODENOUGH, 2006). The Buzz discussion forum will be deemed to be scalable if it can accommodate not only all of the current student numbers involved in the Computer Department’s courses, estimated at approximately 10 000 users (information obtained from the COS Tech Team), but also an increase in future users through the option of including students from the off-campus sites, or more students as a result of an increased intake in future. A scalability metric can be established by setting up a test bench with a server machine and one or more client machines. Then, by using some tool to limit the amount of resources available to the server or run some interfering application on the server, one can measure how the server deals with client requests. By repeating the this experiment whilst gradually increasing/decreasing interfering load/available resources the scalability can be determined. Scalability and performance are not exactly mutually compatible quality requirements: increasing the workload could adversely affect performance. However, seeing that the Buzz discussion forum might receive occasional surges in user load, most of the accesses are likely to be more sporadic and might be less of an impact on performance. The service-oriented architecture pattern (SOA) is often used in order to provide scalability. SOA can adversely affect performance. This can be counter-acted by not making frequent calls between the SOA client application and the SOA service layer by making the calls “chunky” (KHAN, 2010). The fewer calls one makes from the client application to the service layers, the better the performance. 
 
+\subsubsection{Intergratibility}
+\textbf{Core requirement: value = 5}
+\\
+\\\textbf{Architectural pattern associated with this requirement:} Microkernel architectural pattern
+\\ 
+\\Integrability evaluation refers to testing separately developed components to check that they work correctly together (ALENCAR, COWAN, 2012).OR ability of this application to easily fit in as a part of a larger system.For this project it must be possible to add additional features, or to remove them, as the system develops. The system therefore needs to be integrable so that the entire system does not get disrupted as a result of the addition (or removal) of new features. This can be undertaken and measured in terms of the degree of modularisation of the software design and the lack of disruption to the main system as a result of modifications to components.To add further services to the microkernel, one only needs to add or extend an internal server hence the whole Buzz system won't be disrupted.
+
+
 \subsubsection{Reliability}
 \textbf{Important requirement}
 \\
@@ -118,11 +126,37 @@ A brief study of quality requirements in software engineering has shown that man
 \\
 \\Security can be seen as a conflicting requirement when compared with usability (eg. additional login and verification required by the user) (ALENCAR, COWAN, 2012). However, for this project, unregistered, unauthorised users should not be able to access the system so as to prevent malicious activity. Since most users of the Computer Science Department’s website tend to be logged into the system already, this security aspect should not be much of an issue. With regard to system security, the provision of an interface for the application of security updates could be considered (this can be designed to be automated). The degree of security in the Buzz system could be tested for by counting the number of security bugs/flaws/attacks against the system over time.
 
+\subsubsection{Maintainability}
+\textbf{Important requirement}
+\\
+\\Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009).As for the Buzz system whenever new requirements are added as an update to the system,the system needs to remain intact without any errors that will make the system unstable after the addition of new features,and the Buzz users has to remain unaware and unaffected by server repairs,upgrade e.t.c.and for this quality requirement the MVC architecture work best because one of its benefits it's simpler maintenance.
+
+\subsubsection{Flexibility}
+\textbf{Important requirement}
+\\
+\\Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009).As for the Buzz system whenever new requirements are added as an update to the system,the system needs to remain intact without any errors that will make the system unstable after the addition of new features,and the Buzz users has to remain unaware and unaffected by server repairs,upgrade e.t.c
+
+
+\subsubsection{Auditability}
+\textbf{Important requirement}
+\\
+\\Ability of the application to show what has happened to it, who did it and when (audit trail, transaction changes, before/after pictures, etc.); includes requirements for effective dating,in this Buzz system we developing we need to know who created a Thread,and when was it created and who deleted it and why,and the MVC architecture pattern can come in handy as well since it supports synchronized views on the same data,when a Thread is deleted or commented on, everybody associated with it must be in synch with the changes made.
+
+
 \subsubsection{Extensibility}
 \textbf{Nice-to-have requirement}
 \\
 \\Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.
 
+\subsubsection{Cost}
+\textbf{Nice-to-have requirement}
+\\
+\\The use of Agile methods as part of the design process could help to speed up the time it takes to develop the software, and the associated time and execution cost.The application of reusable components could help to bring down time and cost issues. 
+
+\subsubsection{Reusability }
+\textbf{Nice-to-have requirement}
+\\
+\\The application of reusable components could be considered in the design of this project. A library of reusable components could be set up and used to implement sections of the project. The advantage of reusable components means that components that have been tested for reliability, usability etc., can be integrated into the existing project, thereby reducing time and cost risk.
 
 \subsection{Integration and Access Channel Requirements}
 In this section we are looking at the Integration channels between the different systems that will make up the Buzz system. The integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these access channels we need to look at the different access channels that we have available to us, the protocols and API’s needed to create these channels as well as the quality requirements we are attempting to achieve through the use of these integration channels.
