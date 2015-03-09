@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Architecture Requirements}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Architectural scope}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Quality Requirements}{section.2}% 4
+\BOOKMARK [1][-]{section.2}{Architecture\040Requirements}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Architectural\040scope}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Quality\040Requirements}{section.2}% 4
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Usability}{subsection.2.2}% 5
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Performance}{subsection.2.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.2.3}{Availability}{subsection.2.2}% 7
@@ -15,15 +15,18 @@
 \BOOKMARK [3][-]{subsubsection.2.2.11}{Auditability}{subsection.2.2}% 15
 \BOOKMARK [3][-]{subsubsection.2.2.12}{Extensibility}{subsection.2.2}% 16
 \BOOKMARK [3][-]{subsubsection.2.2.13}{Cost}{subsection.2.2}% 17
-\BOOKMARK [3][-]{subsubsection.2.2.14}{Reusability }{subsection.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.3}{Integration and Access Channel Requirements}{section.2}% 19
-\BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 20
-\BOOKMARK [1][-]{section.3}{Architectural Patterns or Styles}{}% 21
-\BOOKMARK [1][-]{section.4}{Architectural Tactics or Strategies}{}% 22
-\BOOKMARK [1][-]{section.5}{Use of Reference Architectures and Frameworks}{}% 23
-\BOOKMARK [1][-]{section.6}{Access and Integration Channels}{}% 24
-\BOOKMARK [2][-]{subsubsection.6.0.1}{Huamn access channels }{section.6}% 25
-\BOOKMARK [3][-]{subsubsection.6.0.2}{System access channels }{subsubsection.6.0.1}% 26
-\BOOKMARK [3][-]{subsubsection.6.0.3}{Integration channels }{subsubsection.6.0.1}% 27
-\BOOKMARK [1][-]{section.7}{Technologies}{}% 28
-\BOOKMARK [1][-]{section.8}{References}{}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.14}{Reusability\040}{subsection.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.3}{Integration\040and\040Access\040Channel\040Requirements}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.4}{Architectural\040Constraints}{section.2}% 20
+\BOOKMARK [1][-]{section.3}{Architectural\040Patterns\040or\040Styles}{}% 21
+\BOOKMARK [1][-]{section.4}{Architectural\040Tactics\040or\040Strategies}{}% 22
+\BOOKMARK [1][-]{section.5}{Use\040of\040Reference\040Architectures\040and\040Frameworks}{}% 23
+\BOOKMARK [2][-]{subsubsection.5.0.1}{Example\040Of\040Architecture\040Frameworks}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.0.2}{Why\040Use\040Reference\040Architectures?}{subsubsection.5.0.1}% 25
+\BOOKMARK [3][-]{subsubsection.5.0.3}{Disadvantages\040Of\040Using\040Reference\040Architectures}{subsubsection.5.0.1}% 26
+\BOOKMARK [1][-]{section.6}{Access\040and\040Integration\040Channels}{}% 27
+\BOOKMARK [2][-]{subsubsection.6.0.4}{Huamn\040access\040channels\040}{section.6}% 28
+\BOOKMARK [3][-]{subsubsection.6.0.5}{System\040access\040channels\040}{subsubsection.6.0.4}% 29
+\BOOKMARK [3][-]{subsubsection.6.0.6}{Integration\040channels\040}{subsubsection.6.0.4}% 30
+\BOOKMARK [1][-]{section.7}{Technologies}{}% 31
+\BOOKMARK [1][-]{section.8}{References}{}% 32
