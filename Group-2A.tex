@@ -288,6 +288,32 @@ Reference architectures are often related to software frameworks. Examples of so
 Websphere, JBoss aplication server, Microsoft.Net or SeeBeyond.
 A framework can thus be defined as a pre-packaged implementation of a reference architecture. It contains actual code and they aim to jump-start application development with a foundation code-base that shapes your architecture and provides utility functions. We will be making use of Java EE as a reference architecture, the Java Platform, Enterprise Edition architecture is is one of the most widely used reference architectures for large, interactive enterprise systems. The Java Enterprise Edition (JEE) provides a reference architecture within which multi-tier enterprise applications are developed. The specification provides a wide range of standard APIs which must be implemented by Java EE frameworks. But what exactly is a Java EE framework? \textit{It is a tool that can host systems built according to the Java EE reference architecture.}
 Another widely used reference architecture for enterprise systems is the Services Oriented Architecture (SOA). The Java community has provided a standard API specification for SOA based systems, the Java Business Integration (JBI) specification. SOA provides an infrastructure for defining, maintaining and executing business processes defined across enterprise systems and decoupling enterprise systems such that they just provide services to or request services from the enterprise bus. SOA is not meant to replace Java EE. It does not provide an infrastructure for effectively hosting business logic and does not provide a presentation layer. The individual systems integrated through the enterprise bus may very often be based on the Java EE architecture. So some collaboration between the reference architecture is required for the are trade offs as well as similarities between the two. In any given domain  a Reference Framework  provides a common backplane for consistency, collaboration, sharing, and reuse of the architecture. Without a consistent framework the domain in question will remain an interesting concept but deliver suboptimal business value of the Buzz System. With an appropriate Reference Framework the work of individual projects, programs, divisions and partners will be coordinated with just enough formality to ensure that the many moving parts can fit together when and were needed as to ensure a wholesome and robust system.
+
+
+\subsubsection{Example Of Architecture Frameworks}
+There are many frameworks available which implement this reference architecture. Some of these are vendor solutions like
+\begin{itemize}
+\item IBM Websphere
+\item BEA WebLogic
+\item Oracle Application Server
+\end{itemize} 
+In addition to these vendor solutions there are also a number of open-source frameworks that realise the Java EE reference architecture, including
+\begin{itemize}
+\item JBoss,
+\item Glassfish,
+\item Apache Geronimo, and
+\item Jonas.
+\end{itemize}
+\subsubsection{Why Use Reference Architectures?}
+There are many benefits in using reference architectures as a guideline when developing or evaluating the architecture of a work product including:
+\begin{itemize}
+\item Reduced risk - The reference architecture is bound to address most of the challenges faced by work products for a particular application domain. It is thus less likely that your architecture is inferior due to some oversight.
+\item More accessible and hence more maintainable - The reference architecture provides a standard architectural solution for your domain which is bound to be more accessible than some home-grown solution. Maintainability is improved by the reference architecture.
+\end{itemize}
+\subsubsection{Disadvantages Of Using Reference Architectures}
+A disadvantage focusing on using reference architectures is that one might be hindered from coming up with novel solutions which could have provided a competitive edge as now you are fixed to a specific Reference Architecture.
+
+
 \section{Access and Integration Channels}
 The access channel requirements specifies what platforms and technologies are required for the BUZZ System to be accessed by users (desktop computers, laptops). As well as operating systems that the BUZZ system can be accessed on. It also specifies the different networks in which the BUZZ system will use for sending and receiving messages and signals.
 
