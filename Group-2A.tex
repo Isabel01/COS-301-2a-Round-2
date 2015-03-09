@@ -46,7 +46,8 @@
 \newpage
 
 \section{Introduction}
-This document sets out the software architecture design requirements for the COS 301 group project entitled Buzz.
+<<<<<<< HEAD
+t sets out the software architecture design requirements for the COS 301 group project entitled Buzz.
 \\
 \\In terms of a definition, software architecture can be defined as
 \\
@@ -58,6 +59,17 @@ This document sets out the software architecture design requirements for the COS
 \\
 \\Thus, software architecture deals as much with the design of a software system as with the decision-making process involved in determining the most optimal architectural design.
 High-level architectural patterns, or styles, are often associated with the architectural design process, patterns such as layered architecture, component-based architecture, model-view-controller, and the pipes and filters pattern (MICROSOFT DEVELOPER NETWORK, n.d.).
+=======
+rala's intro goes here.....
+
+The idea behind the 'Buzz' project is to find ways to enhance teaching and improve the learning of students through the use of online discussions. The 'Buzz' will be an online forum where students can express their views on specific work topics, thus students will be able to see the work from other students perspective's and be able to discuss problems and find solutions creating an educational environment while allowing for social interactivity among students.
+
+The idea is to create a fun, rewarding and educational environment, thus students will be rewarded for participating in this online forum by being 'leveled up' according to contributions on the forum. When a student reaches a new level he/she will have more privileges such as being able to start their own thread and having access to more functionality. All users will also be able to see each other's levels - in this way we try to motivate students to 'level up' to also receive those privileges. 
+
+By having students communicating about work related to subjects the lecturers will also be able to view the discussions and thus see what problems and questions students have about the work and can address these again in class if needed. Lecturers on the other hand will also have a lot more privileges than students and can at any time start a new thread and discussions and so forth. 
+
+The forum needs to be user-friendly to help inexperienced users to easily navigate and find their way around the forum thus it also needs to be well and logically organized. It should also raise excitement in students to want to participate in discussions or just go onto the forum and read about work covered during lectures to get a better understanding. 
+
 \\
 
 
@@ -148,10 +160,16 @@ A brief study of quality requirements in software engineering has shown that man
 \\Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009).As for the Buzz system whenever new requirements are added as an update to the system,the system needs to remain intact without any errors that will make the system unstable after the addition of new features,and the Buzz users has to remain unaware and unaffected by server repairs,upgrade e.t.c.and for this quality requirement the MVC architecture work best because one of its benefits it's simpler maintenance.
 
 \subsubsection{Flexibility}
-\textbf{Important requirement}
+<<<<<<< HEAD
+rtant requirement}
 \\
 \\Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009).As for the Buzz system whenever new requirements are added as an update to the system,the system needs to remain intact without any errors that will make the system unstable after the addition of new features,and the Buzz users has to remain unaware and unaffected by server repairs,upgrade e.t.c
 
+
+=======
+{Nice-to-have requirement}
+
+\\Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009). Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.
 
 \subsubsection{Auditability}
 \textbf{Important requirement}
@@ -160,12 +178,10 @@ A brief study of quality requirements in software engineering has shown that man
 
 
 \subsubsection{Extensibility}
-\begin{itemize}
-	\item \textbf{Nice-to-have requirement}
-	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern 
+\begin{itemize}                        i                                                                                         I                                                                                                                                                                                                                                                                                                   it is requi                                                  available ar                                                             previously stipulated        r                                                  bsubsectionextbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern 
 	\item Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities. Both the layered system and the MVC allow for separation of concerns, which means that it should be possible to add additional features to the system without adversely affecting the rest of the system.
-\end{itemize}
-
+\end{itemize}              
+                           
 
 \subsubsection{Cost}
 \textbf{Nice-to-have requirement}
@@ -258,14 +274,24 @@ Below is a diagram to illustrate how the layers will be connected:
 From an MVC perspective:
 %\epsfig{file=mvc.eps,width=17cm}
 
-\begin{figure}[H]
+\begin{figure}[H]                                                                                                                                               
 \includegraphics[width=\textwidth]{mvc.eps}
 \caption{MVC architecture pattern diagram \label{overflow}}
-\end{figure}
-
-
+\end{figure}                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                   t
+\\
+                           
 The integration between these layers will be in the form of APIs that each layer will provide to the layer directly above it.
+                                                                                                                                      
 
+\subsection{Queueing}
+will be using is Queueing. This will help realise the integratability of the system.
+
+\\Queueing is when you queue the different systems' requests to the server in an attempt to allow the server to just focus on one request at a time making it possible to handle requests faster than when it is dividing its attention between multiple requests. By queueing the request any system can send its request and it will be placed into the queue with the other requests. Each system only needs to access the queue, they don't each need remote access to the system. 
+
+\\We will realised this tactic by making use of a queueing system such as FIFO to buffer the server requests until the server is able to handle the next one. 
+
+\\
 Using the Layered pattern will improve on the following non-functional requirements:
 \begin{itemize}
 			\item Pluggability – different services can be tracked easily on the different layers, and can be replaced without compromising the whole system.
@@ -349,6 +375,7 @@ The access channel requirements specifies what platforms and technologies are re
 \item The System needs to be able to handle multiple clients logging into the Buzz system at the same time. If there are lets say about 10 000 clients registered on the Buzz system, the system must be constructed in such a way that it can handle all of the clients logging in at the same time. Idealy to help with the traffic, the system needs to be able to host 10 times more clients logging in than what is registered. This will ensure that the operating speed and optimality of the system is of such a state that it would be fast and efficient to use for the clients, ensuring the best service the system can provide.
 \item We want our system to be of high standard and quality and therefore the system needs to comply with a few basic standards for example  since it is a web page we will have to validate our page to comply with all HTML 5 standards. 
 \item Our system thus also needs to be browser independent to ensure users can access the system not only from any device but also from any browser of their choice making it not only a quality system but also a convenient system.
+
 \item The BUZZ system would need to integrate with various software for example :
 \begin{itemize}
 \item  MYSQL – To gain access to database functionality to store information for the BUZZ system.
