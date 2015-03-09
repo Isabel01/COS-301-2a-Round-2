@@ -48,9 +48,9 @@
 \section{Introduction}
 .... Carala's intro goes here.....
 
-The idea behind the 'Buzz' project is to find ways to enhance teaching and improve the learning of students through the use of online discussions.  The 'Buzz' will be an online forum where students can express their views on specific work topics, thus students will be able to see the work from other students perspective's and be able to discuss problems and find solutions creating an educational environment while allowing for social interactivity among students.
+The idea behind the 'Buzz' project is to find ways to enhance teaching and improve the learning of students through the use of online discussions. The 'Buzz' will be an online forum where students can express their views on specific work topics, thus students will be able to see the work from other students perspective's and be able to discuss problems and find solutions creating an educational environment while allowing for social interactivity among students.
 
-The idea is to create a fun, rewarding and educational environment, thus students will be rewarded for participating in this online forum by being 'leveled up' according to contributions on the forum. When a student reaches a new level he/she will have more privileges such as being able to start their own thread and having access to more functionality. All users will also be able to see each other's levels - in this way we try to motivate students to 'level up' to also receive those privileges.   
+The idea is to create a fun, rewarding and educational environment, thus students will be rewarded for participating in this online forum by being 'leveled up' according to contributions on the forum. When a student reaches a new level he/she will have more privileges such as being able to start their own thread and having access to more functionality. All users will also be able to see each other's levels - in this way we try to motivate students to 'level up' to also receive those privileges. 
 
 By having students communicating about work related to subjects the lecturers will also be able to view the discussions and thus see what problems and questions students have about the work and can address these again in class if needed. Lecturers on the other hand will also have a lot more privileges than students and can at any time start a new thread and discussions and so forth. 
 
@@ -59,7 +59,7 @@ The forum needs to be user-friendly to help inexperienced users to easily naviga
 
 \section{Architecture Requirements}
 
-From the introduction it is quite clear what our business client wants from the Buzz system, thus all the business needs has now been identified. The next step is to specify the capabilities the system must deliver in the form of system requirements as listed  below. 
+From the introduction it is quite clear what our business client wants from the Buzz system, thus all the business needs has now been identified. The next step is to specify the capabilities the system must deliver in the form of system requirements as listed below. 
 
 \subsection{Architectural scope}
 This section discusses architectural responsibilities that need to be addressed by the software
@@ -72,7 +72,7 @@ architecture. These include the following:
 \end{itemize}
 
 \subsection{Quality Requirements}
-A brief study of quality requirements in software engineering has shown that many of the quality requirements go hand-in-hand, such as reusability and cost; whilst others compete against each other, such as security and usability. The optimal architectural design will be looking at a balanced trade-off amongst the various quality requirements in order to achieve an acceptable solution.  This trade-off can be best achieved when the focus is primarily on a small number of core requirements, with compromises made with regard to the important and non-core quality requirements. To this effect this section will define a list of quality requirements, and specify whether they are core requirements, important requirements or nice-to-have, providing information on how these can be quantified or specified in a testable way and which architectural pattern may be the most suitable in achieving the requirement.
+A brief study of quality requirements in software engineering has shown that many of the quality requirements go hand-in-hand, such as reusability and cost; whilst others compete against each other, such as security and usability. The optimal architectural design will be looking at a balanced trade-off amongst the various quality requirements in order to achieve an acceptable solution. This trade-off can be best achieved when the focus is primarily on a small number of core requirements, with compromises made with regard to the important and non-core quality requirements. To this effect this section will define a list of quality requirements, and specify whether they are core requirements, important requirements or nice-to-have, providing information on how these can be quantified or specified in a testable way and which architectural pattern may be the most suitable in achieving the requirement.
 
 \subsubsection{Usability}
 \textbf{Core requirement: value = 1}
@@ -146,7 +146,7 @@ A brief study of quality requirements in software engineering has shown that man
 \subsubsection{Extensibility}
 \textbf{Nice-to-have requirement}
 \\
-\\Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.
+\\Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009). Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.
 
 \subsubsection{Cost}
 \textbf{Nice-to-have requirement}
@@ -159,72 +159,73 @@ A brief study of quality requirements in software engineering has shown that man
 \\The application of reusable components could be considered in the design of this project. A library of reusable components could be set up and used to implement sections of the project. The advantage of reusable components means that components that have been tested for reliability, usability etc., can be integrated into the existing project, thereby reducing time and cost risk.
 
 \subsection{Integration and Access Channel Requirements}
-In this section we are looking at the Integration channels between the different systems that will make up the Buzz system. The integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these access channels we need to look at the different access channels that we have available to us, the protocols and API’s needed to create these channels as well as the quality requirements we are attempting to achieve through the use of these integration channels.
+This section considers the integration channels between the different systems that will make up the Buzz system. Integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these
+access channels it is required that the different access channels available are considered, the protocols and APIs needed to create these channels as well as the previously stipulated quality requirements for attempting to achieve through the use of these integration channels.
 \\
-\\\textbf{Integration channels that can be considered for use in the Buzz project}
+\\\subsubsection{Integration channels that can be considered for use in the Buzz project}
 \begin{itemize}
-	\item The Computer Science(CS) Lightweight Directory Access Protocol (LDAP) repository could be used to retrieve student details and class lists.
-	\item The Computer Science(CS) MySQL database could be used to access module information from the database
-	\item Details regarding the integration with the databases can be obtained from the tech team 
+\item The Computer Science (CS) Lightweight Directory Access Protocol (LDAP) repository could be used to retrieve student details and class lists.
+\item The Computer Science (CS) MySQL database could be used to access module information from the database
+\item Details regarding the integration with the databases can be obtained from the tech team 
 \end{itemize}
-\textbf{Integration channels that can be considered for use in the Buzz project}
+\subsubsection{Integration channels that can be considered for use in the Buzz project}
 \begin{itemize}
-	\item HTTPS (Hypertext Transfer Protocol Secure) is a protocol that allows safe and secure transfer of data over a network. It could be used to transfer the SOAP messages between the two systems.
-	\item SOAP (Simple Access Project Protocol) allows programs that run on different operating system to communicate using HTTP and XML. It is platform and language independent, It is useful in handling asynchronous processing and it supports many protocols and technologies.
-	\item LDAP (Lightweight Directory Access Protocol) is typically  used to authenticate a user’s details, in this case, lecturer’s, teaching assistant’s or student’s credentials when logging in. LDAP can also be used to retrieve a student’s personal details, to retrieve courses a student is taking and also used to retrieve a class list for a specific module.
+\item HTTPS (Hypertext Transfer Protocol Secure) is a protocol that allows safe and secure transfer of data over a network. It could be used to transfer the SOAP messages between the two systems.
+\item SOAP (Simple Access Project Protocol) allows programs that run on different operating system to communicate using HTTP and XML. It is platform and language independent, It is useful in handling asynchronous processing and it supports many protocols and technologies.
+\item LDAP (Lightweight Directory Access Protocol) is typically used to authenticate a user’s details, in this case, lecturer’s, teaching assistant’s or student’s credentials when logging in. LDAP can also be used to retrieve a student’s personal details, to retrieve courses a student is taking and also used to retrieve a class list for a specific module.
 \end{itemize}
 \textbf{API specifications used in the integration of the systems}
 \begin{itemize}
-	\item JPA (Java Persistence API) reduces interaction with the database and it makes use of ORM to convert data from object type to relational type and vice versa. ORM maps objects to its data in the database.
-	\item JPQL (Java Persistence Query Language) creates queries against entities to store in a relational database.
-	\item JSF (JavaServer Faces) enables reuse and extension of existing standard UI components. Its based on mvc architecture for separating logic.
+\item JPA (Java Persistence API) reduces interaction with the database and it makes use of ORM to convert data from object type to relational type and vice versa. ORM maps objects to its data in the database.
+\item JPQL (Java Persistence Query Language) creates queries against entities to store in a relational database.
+\item JSF (JavaServer Faces) enables reuse and extension of existing standard UI components. Its based on mvc architecture for separating logic.
 \end{itemize}
 \textbf{Quality requirements that can be achieved through the implementation of the access channels mentioned}
 \begin{itemize}
-	\item Reliability so that the system is online as much as possible and that data transfer isn’t easily corruptible and that the transfer is fast.
-	\item Security of user data being transferred.
-	\item Scalable so that a large amount of users’ data can be transferred to and from the systems.
-	\item Maintainable, the integration with the system must be easily maintained.
-	\item Testable, All services offered by the system must be testable through integration testing.
+\item Reliability so that the system is online as much as possible and that data transfer isn’t easily corruptible and that the transfer is fast.
+\item Security of user data being transferred.
+\item Scalable so that a large amount of users’ data can be transferred to and from the systems.
+\item Maintainable, the integration with the system must be easily maintained.
+\item Testable, All services offered by the system must be testable through integration testing.
 \end{itemize}
 
 \subsection{Architectural Constraints}
 There are multiple factors that may place constraints on the architecture that is being developed for the Buzz System. For example:
 \begin{itemize}
-\item	Network topology
-\item	Use of a given database vendor or an existing database
-\item	Web environment (server configurations, firewall, DMZs)
-\item	Servers (hardware model, operating system)
-\item	Use of third party software or particular technology
-\item	Compliance with existing standards
+\item Network topology
+\item Use of a given database vendor or an existing database
+\item Web environment (server configurations, firewall, DMZs)
+\item Servers (hardware model, operating system)
+\item Use of third party software or particular technology
+\item Compliance with existing standards
 \end{itemize}
 Technical skills that have to be applied as per the client include Linux, which is Open Source and therefore free as in unconstrained. JavaEE, JPA, JPQL, JSF, HTML, AJAX, Javascript are technologies that will be used to construct and maintain the system. The Buzz system should provide the ability to fulfill the users requirements by resulting in an implemented web enable application that meets or exceeds the user’s expectations. The technology and development tools chosen shall:
 \begin{itemize}
-\item 	Allow us take advantage of the benefits of an object-oriented architecture when providing web-enabled applications.
-\item	Be created utilizing tools and technologies from stable companies that are at low risk of going out of business or quickly changing their products and/or service offerings.
-\item	Be created utilizing tools and technologies, which have strong potential to remain market leaders. This will help reduce the risk of having to retool often because the resources to support the tools are simply not available.
-\item	Be able to adapt to the current and future direction of the mainstream web development environment. This will help ensure that the tools and technologies have an extended life cycle and will lessen the effort in application maintenance applications because they fail to support the required technologies.
+\item Allow us take advantage of the benefits of an object-oriented architecture when providing web-enabled applications.
+\item Be created utilizing tools and technologies from stable companies that are at low risk of going out of business or quickly changing their products and/or service offerings.
+\item Be created utilizing tools and technologies, which have strong potential to remain market leaders. This will help reduce the risk of having to retool often because the resources to support the tools are simply not available.
+\item Be able to adapt to the current and future direction of the mainstream web development environment. This will help ensure that the tools and technologies have an extended life cycle and will lessen the effort in application maintenance applications because they fail to support the required technologies.
 \end{itemize}
 The Buzz System should be developed using only non-proprietary software. The resultant Buzz System infrastructure should not be vendor or platform locked thereby hampering flexible usability of the system.
 
 \section{Architectural Patterns or Styles}
 An architectural pattern can be defined as a set of principles that shape an application, promote partitioning of services and reuse of code. There are a number of different patterns out there that are used for various reasons, below are some patterns we looked at to decide which ones to use;
 \begin{itemize}
-			\item Client/Server pattern which separates a system into two applications. Client sends requests to server and server responds to client with relevant information.
-			\item Service Oriented Architecture (SOA) enables application functionality to be provided as a set of services.
-			\item MVC which separates an application into View, controller and model modules.
-			\item Object oriented pattern divides application into separate self-sufficient objects containing data only relevant to that object.
-			\item Component-based architecture pattern focuses on the decomposition of the design into individual functional components, providing a higher level of abstraction than the OO pattern.(Microsoft Developer Network, n.d) \\[1em]
+\item Client/Server pattern which separates a system into two applications. Client sends requests to server and server responds to client with relevant information.
+\item Service Oriented Architecture (SOA) enables application functionality to be provided as a set of services.
+\item MVC which separates an application into View, controller and model modules.
+\item Object oriented pattern divides application into separate self-sufficient objects containing data only relevant to that object.
+\item Component-based architecture pattern focuses on the decomposition of the design into individual functional components, providing a higher level of abstraction than the OO pattern.(Microsoft Developer Network, n.d) \\[1em]
 \end{itemize}
 The Buzz system could consider the use of combined architectural patterns to achieve effective separation of concerns by using the Service Oriented Architecture (SOA) in which the services can be developed using a layered pattern coupled with the MVC pattern. 
 The decision to use the combination of these patterns is due to the fact that the Buzz system is complex and needs to be broken down into simpler services that can be worked on separately by different teams, this will ensure responsibility localization and also improve maintainability of each sub-system. 
 
 The services can be spread out in the following layers:
 \begin{itemize}
-			\item Presentation (Web Application) – Responsible for providing an interface in which users will be able to interact with the Buzz system. This will be called the BuzzWeb for the fact that it will be web based since an Android application is outside the scope of the mini project. This layer is the equivalent of the View in the MVC pattern.
-			\item Web Services – This layer will be responsible for providing the services that are needed by the presentation to function, all services in the BuzzSpaces and BuzzThreads modules will be encapsulated in the web services. This forms part of the control in the MVC architecture.
-			\item Business Logic – The business logic will be responsible for providing a channel to store and retrieve data from the buzz resources contained in the persistence layer. This is under the model in the MVC architecture.
-			\item Persistence layer – This will include all resources that the buzz system will use, including databases and the CS dataset adapter which contains modules, students and lectures information. This is under the model in the MVC architecture.  \\[1em]
+\item Presentation (Web Application) – Responsible for providing an interface in which users will be able to interact with the Buzz system. This will be called the BuzzWeb for the fact that it will be web based since an Android application is outside the scope of the mini project. This layer is the equivalent of the View in the MVC pattern.
+\item Web Services – This layer will be responsible for providing the services that are needed by the presentation to function, all services in the BuzzSpaces and BuzzThreads modules will be encapsulated in the web services. This forms part of the control in the MVC architecture.
+\item Business Logic – The business logic will be responsible for providing a channel to store and retrieve data from the buzz resources contained in the persistence layer. This is under the model in the MVC architecture.
+\item Persistence layer – This will include all resources that the buzz system will use, including databases and the CS dataset adapter which contains modules, students and lectures information. This is under the model in the MVC architecture. \\[1em]
 \end{itemize}
 
 Below is a diagram to illustrate how the layers will be connected:
@@ -249,30 +250,46 @@ The integration between these layers will be in the form of APIs that each layer
 
 Using the Layered pattern will improve on the following non-functional requirements:
 \begin{itemize}
-			\item Pluggability – different services can be tracked easily on the different layers, and can be replaced without compromising the whole system.
-			\item Testability – Having different layers will make unit testing very simple since the layers are independent of each other, this implies that mock objects will be used to test each layer.
-			\item Maintainability – Different teams can work on the different layers independently and maintain each layer separately.
-			\item Security – Having authentication on the presentation layer and authorization in the Web services will increase security because each of these will be localized in one layer, however authentication is mostly left to LDAP.   \\[1em]
+\item Pluggability – different services can be tracked easily on the different layers, and can be replaced without compromising the whole system.
+\item Testability – Having different layers will make unit testing very simple since the layers are independent of each other, this implies that mock objects will be used to test each layer.
+\item Maintainability – Different teams can work on the different layers independently and maintain each layer separately.
+\item Security – Having authentication on the presentation layer and authorization in the Web services will increase security because each of these will be localized in one layer, however authentication is mostly left to LDAP. \\[1em]
 \end{itemize}
 
 
 \section{Architectural Tactics or Strategies}
-This section describes the Architectural tactics/strategies which are the conscious design decisions that will influence how the quality requirements are realized in the system. Listed below are the architectural tactics/strategies that we chose to implement in our system as well as which quality requirements they influence and how we plan on implementing them in our system. 
+This section describes the Architectural tactics/strategies which are the conscious design decisions that will influence how the quality requirements are realised in the system. Listed below are the architectural tactics/strategies that we chose to implement in our system as well as which quality requirements they influence and how we plan on implementing them in our system. 
 \\
-\\\textbf{Course grained services}
-\\We will be looking at using course grained services to help realize the performance, scalability, reliability, integrability, reusability, testability and affordability of the system. Coarse grained services is when you group together smaller components and or functions and present it to the user as one big service. This helps with reliability since the users of the system don’t have access to all the smaller private functions, also you can add as many systems as needed since they all will likely just need access to the coarse grained services instead of all the functions the system has to offer.
-This strategy will be realized through the construction of the code. Instead of just writing multiple smaller functions we would also write a wrapper functions to encapsulate some of the other functions to make the course grained services. 
+\\\subsection{Course grained services}
+Firstly we will be looking at using course grained services to help realise the performance of the system.
 \\
-\\\textbf{Persistent messaging}
-\\The second tactic that we will use is Persistent messaging to help realize scalability, reliability, auditability, integrability, flexibility and maintainability. It also negatively affects performance, affordability and deployment. Persistent messaging is when the messages that are being passed between the systems are sored to disk when send until all the participants have responded that they have received the message. This is done to ensure that the messages will still be delivered even if one of the integration channels breakdown.
-This strategy will be realized through the use of a dedicate message broker to facilitate the storage and transfer of messages between the systems. 
+\\ Coarse grained services is when you group together smaller components and or functions and present it to the user as one big service. This helps with reliability since the users of the system don’t have access to all the smaller private functions, also you can add as many systems as needed since they all will likely just need access to the coarse grained services instead of all the functions the system has to offer.
 \\
-\\\textbf{Request/connection dropping}
-\\The third tactic that we will be using is Request/connection dropping. This tactic will help to realize scalability, reliability and security. Request/connection dropping is when the connection is closed as soon as the request has been handled in order to lower the network traffic being generated. This allows for more users to use the system at the same time as well as ensures security since if there is no open connections remaining open the risk of someone hacking into a part of the system housing confidential user data is drastically reduces. 
-This strategy will be realised through the use of asynchronous threads that close the connection from the client’s side as soon as all the data has been received or from the server’s side if it is going to take a long time to get the data ready for transfer. Then the connection is opened again when the data is ready to be transferred to the client. 
+\\This strategy will be realised through the construction of the code. Instead of just writing multiple smaller functions we would also write a wrapper functions to encapsulate some of the other functions to make the course grained services. 
+\\
+\\\subsection{Persistent messaging}
+The second tactic that we will use is persistent messaging to help realise scalability.
+\\
+\\Persistent messaging is when the messages that are being passed between the systems are stored to disk when send until all the participants have responded that they have received the message. This is done to ensure that the messages will still be delivered even if one of the integration channels breakdown.
+\\
+\\This strategy will be realised through the use of a dedicate message broker to facilitate the storage and transfer of messages between the systems. 
+\\
+\\\subsection{Request/connection dropping}
+The third tactic that we will be using is Request/connection dropping. This tactic will help to realise security. 
+\\
+\\Request/connection dropping is when the connection is closed as soon as the request has been handled in order to lower the network traffic being generated. This allows for more users to use the system at the same time as well as ensures security since if there is no open connections remaining open the risk of someone hacking into a part of the system housing confidential user data is drastically reduces. 
+\\
+\\This strategy will be realised through the use of asynchronous threads that close the connection from the client’s side as soon as all the data has been received or from the server’s side if it is going to take a long time to get the data ready for transfer. Then the connection is opened again when the data is ready to be transferred to the client. 
+\\
+\\\subsection{Queueing}
+Another tactic that we will be using is Queueing. This will help realise the integratability of the system.
+\\
+\\Queueing is when you queue the different systems' requests to the server in an attempt to allow the server to just focus on one request at a time making it possible to handle requests faster than when it is dividing its attention between multiple requests. By queueing the request any system can send its request and it will be placed into the queue with the other requests. Each system only needs to access the queue, they don't each need remote access to the system. 
+\\
+\\We will realised this tactic by making use of a queueing system such as FIFO to buffer the server requests until the server is able to handle the next one. 
 \\
 \\\textbf{Run-time}
-\\The fourth tactic that we will be using is the run-time tactic. This tactic will help to realize usability. Run-time tactic is when the system is executing and the user gets continuous feedback as to what the system is doing. It gives the user the ability to issue usability commands such as cancel, undo, aggregate and a lot more.  This tactic is both user initiative and system initiative. An example of system initiative is to maintain user or system models
+\\The fourth tactic that we will be using is the run-time tactic. This tactic will help to realize usability. Run-time tactic is when the system is executing and the user gets continuous feedback as to what the system is doing. It gives the user the ability to issue usability commands such as cancel, undo, aggregate and a lot more. This tactic is both user initiative and system initiative. An example of system initiative is to maintain user or system models
 This strategy will be realized through continuous feedback to the user which would improve usability.
 \\
 \\\textbf{Manage Input/Ouput}
@@ -294,7 +311,7 @@ Another widely used reference architecture for enterprise systems is the Service
 \\\\
 SOA is not meant to replace Java EE. It does not provide an infrastructure for effectively hosting business logic and does not provide a presentation layer. The individual systems integrated through the enterprise bus may very often be based on the Java EE architecture. So some collaboration between the reference architecture is required for the are trade offs as well as similarities between the two.
 \\\\
-In any given domain  a Reference Framework  provides a common backplane for consistency, collaboration, sharing, and reuse of the architecture. Without a consistent framework the domain in question will remain an interesting concept but deliver suboptimal business value of the Buzz System. With an appropriate Reference Framework the work of individual projects, programs, divisions and partners will be coordinated with just enough formality to ensure that the many moving parts can fit together when and were needed as to ensure a wholesome and robust system.
+In any given domain a Reference Framework provides a common backplane for consistency, collaboration, sharing, and reuse of the architecture. Without a consistent framework the domain in question will remain an interesting concept but deliver suboptimal business value of the Buzz System. With an appropriate Reference Framework the work of individual projects, programs, divisions and partners will be coordinated with just enough formality to ensure that the many moving parts can fit together when and were needed as to ensure a wholesome and robust system.
 
 
 \subsubsection{Example Of Architecture Frameworks}
@@ -326,13 +343,13 @@ The access channel requirements specifies what platforms and technologies are re
 
 \subsubsection{Huamn access channels }
 \begin{itemize}
-\item The BUZZ system would be made available on platforms like desktop computers, mobile phones, laptops and tablets, it should also be operating systems independent enabling it to be accessed through various operating systems such as  windows, android, iOS, Linux etc. Therefore it can basically be accessed by any device that can connect to the internet since the Buzz system will be hosted on the internet ideally as an add-on to the website of the Department of Computer Science of the University of Pretoria. 
+\item The BUZZ system would be made available on platforms like desktop computers, mobile phones, laptops and tablets, it should also be operating systems independent enabling it to be accessed through various operating systems such as windows, android, iOS, Linux etc. Therefore it can basically be accessed by any device that can connect to the internet since the Buzz system will be hosted on the internet ideally as an add-on to the website of the Department of Computer Science of the University of Pretoria. 
 \item The System needs to be able to handle multiple clients logging into the Buzz system at the same time. If there are lets say about 10 000 clients registered on the Buzz system, the system must be constructed in such a way that it can handle all of the clients logging in at the same time. Idealy to help with the traffic, the system needs to be able to host 10 times more clients logging in than what is registered. This will ensure that the operating speed and optimality of the system is of such a state that it would be fast and efficient to use for the clients, ensuring the best service the system can provide.
-\item We want our system to be of high standard and quality and therefore the system needs to comply with a few basic standards for example  since it is a web page we will have to validate our page to comply with all HTML 5 standards. 
+\item We want our system to be of high standard and quality and therefore the system needs to comply with a few basic standards for example since it is a web page we will have to validate our page to comply with all HTML 5 standards. 
 \item Our system thus also needs to be browser independent to ensure users can access the system not only from any device but also from any browser of their choice making it not only a quality system but also a convenient system.
 \item The BUZZ system would need to integrate with various software for example :
 \begin{itemize}
-\item  MYSQL – To gain access to database functionality to store information for the BUZZ system.
+\item MYSQL – To gain access to database functionality to store information for the BUZZ system.
 \item JavaScript - To write some functionality and possibly interact with Java programs which will most probably be in charge of activating the sockets and threads and enabling the system to handle multiple users.
 \item HTML5 - to construct the web page the system will be hosted on 
 \item CSS - to style the Buzz system to not only be user friendly but to also have a ‘nice feel’ to ensure users also enjoy participating on the Buzz system.
@@ -342,18 +359,18 @@ The access channel requirements specifies what platforms and technologies are re
 \subsubsection{System access channels }
 
 \begin{itemize}
-\item Other systems can access the BUZZ system through the network by gaining access to the  CS(Computer Science) server - cs.up.za. 
+\item Other systems can access the BUZZ system through the network by gaining access to the CS(Computer Science) server - cs.up.za. 
 \item The server in turn then needs to have access to the database to be able to display all the necessary info stored therein and to ensure only registered users can log in and thus verify their passwords and usernames and then to also allow the system to see the client's privileges and thus allow the client to only perform legal operations when he/she is logged into the Buzz space system and all other database related communications. 
 \end{itemize}
 
 \subsubsection{Integration channels }
 \begin{itemize}
-\item The Buzz System will have to be able to integrate with the University of Pretoria's Department of Computer Science web page, to serve as the Department's discussion forum for all modules and work related topics.  
+\item The Buzz System will have to be able to integrate with the University of Pretoria's Department of Computer Science web page, to serve as the Department's discussion forum for all modules and work related topics. 
 \item The system needs to be integrated in such a way that if more sub-sections are added and integrated with the system, it will not affect the already existing part or features the system has to offer. 
 \item It will however be ideal if the Buzz system can be designed in such a way that it could be used as an add-on to any web page. Thus it needs to be later extended and used on various educational web pages.
-\item But for now we just need the Buzz system to integrate with the  University of Pretoria's Computer Science website and thus different requirements needs to be met to enable it to be a safe and quality system. 
+\item But for now we just need the Buzz system to integrate with the University of Pretoria's Computer Science website and thus different requirements needs to be met to enable it to be a safe and quality system. 
 \item For example Security aspects needs to comply with that of the Computer Science web page to ensure no harm from students can be done to the web page. Through the Buzz system, any student can have access to the root files of the Buzz system, security measures need to be in place to protect these files.
-\item The site also needs to be maintainable and  have a good performance. For example, must be able to handle all students and staff members that can log into the Computer Science web page and more.
+\item The site also needs to be maintainable and have a good performance. For example, must be able to handle all students and staff members that can log into the Computer Science web page and more.
 \item The system also needs to be flexible, reliable and also user friendly. All these points are more deeply described in the "Quality Requirements" section.
 \end{itemize}
 
@@ -362,3 +379,4 @@ The access channel requirements specifies what platforms and technologies are re
 \section{References}
 
 \end{document}
+

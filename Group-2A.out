@@ -17,13 +17,22 @@
 \BOOKMARK [3][-]{subsubsection.2.2.13}{Cost}{subsection.2.2}% 17
 \BOOKMARK [3][-]{subsubsection.2.2.14}{Reusability }{subsection.2.2}% 18
 \BOOKMARK [2][-]{subsection.2.3}{Integration and Access Channel Requirements}{section.2}% 19
-\BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 20
-\BOOKMARK [1][-]{section.3}{Architectural Patterns or Styles}{}% 21
-\BOOKMARK [1][-]{section.4}{Architectural Tactics or Strategies}{}% 22
-\BOOKMARK [1][-]{section.5}{Use of Reference Architectures and Frameworks}{}% 23
-\BOOKMARK [1][-]{section.6}{Access and Integration Channels}{}% 24
-\BOOKMARK [2][-]{subsubsection.6.0.1}{Huamn access channels }{section.6}% 25
-\BOOKMARK [3][-]{subsubsection.6.0.2}{System access channels }{subsubsection.6.0.1}% 26
-\BOOKMARK [3][-]{subsubsection.6.0.3}{Integration channels }{subsubsection.6.0.1}% 27
-\BOOKMARK [1][-]{section.7}{Technologies}{}% 28
-\BOOKMARK [1][-]{section.8}{References}{}% 29
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Integration channels that can be considered for use in the Buzz project}{subsection.2.3}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Integration channels that can be considered for use in the Buzz project}{subsection.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.4}{Architectural Constraints}{section.2}% 22
+\BOOKMARK [1][-]{section.3}{Architectural Patterns or Styles}{}% 23
+\BOOKMARK [1][-]{section.4}{Architectural Tactics or Strategies}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{Course grained services}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.2}{Persistent messaging}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.3}{Request/connection dropping}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.4}{Queueing}{section.4}% 28
+\BOOKMARK [1][-]{section.5}{Use of Reference Architectures and Frameworks}{}% 29
+\BOOKMARK [2][-]{subsubsection.5.0.1}{Example Of Architecture Frameworks}{section.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.0.2}{Why Use Reference Architectures?}{subsubsection.5.0.1}% 31
+\BOOKMARK [3][-]{subsubsection.5.0.3}{Disadvantages Of Using Reference Architectures}{subsubsection.5.0.1}% 32
+\BOOKMARK [1][-]{section.6}{Access and Integration Channels}{}% 33
+\BOOKMARK [2][-]{subsubsection.6.0.4}{Huamn access channels }{section.6}% 34
+\BOOKMARK [3][-]{subsubsection.6.0.5}{System access channels }{subsubsection.6.0.4}% 35
+\BOOKMARK [3][-]{subsubsection.6.0.6}{Integration channels }{subsubsection.6.0.4}% 36
+\BOOKMARK [1][-]{section.7}{Technologies}{}% 37
+\BOOKMARK [1][-]{section.8}{References}{}% 38

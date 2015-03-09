@@ -17,13 +17,22 @@
 \contentsline {subsubsection}{\numberline {2.2.13}Cost}{7}{subsubsection.2.2.13}
 \contentsline {subsubsection}{\numberline {2.2.14}Reusability }{7}{subsubsection.2.2.14}
 \contentsline {subsection}{\numberline {2.3}Integration and Access Channel Requirements}{8}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Integration channels that can be considered for use in the Buzz project}{8}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Integration channels that can be considered for use in the Buzz project}{8}{subsubsection.2.3.2}
 \contentsline {subsection}{\numberline {2.4}Architectural Constraints}{9}{subsection.2.4}
-\contentsline {section}{\numberline {3}Architectural Patterns or Styles}{9}{section.3}
-\contentsline {section}{\numberline {4}Architectural Tactics or Strategies}{11}{section.4}
-\contentsline {section}{\numberline {5}Use of Reference Architectures and Frameworks}{13}{section.5}
-\contentsline {section}{\numberline {6}Access and Integration Channels}{13}{section.6}
-\contentsline {subsubsection}{\numberline {6.0.1}Huamn access channels }{13}{subsubsection.6.0.1}
-\contentsline {subsubsection}{\numberline {6.0.2}System access channels }{14}{subsubsection.6.0.2}
-\contentsline {subsubsection}{\numberline {6.0.3}Integration channels }{14}{subsubsection.6.0.3}
-\contentsline {section}{\numberline {7}Technologies}{14}{section.7}
-\contentsline {section}{\numberline {8}References}{14}{section.8}
+\contentsline {section}{\numberline {3}Architectural Patterns or Styles}{10}{section.3}
+\contentsline {section}{\numberline {4}Architectural Tactics or Strategies}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Course grained services}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Persistent messaging}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Request/connection dropping}{13}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Queueing}{13}{subsection.4.4}
+\contentsline {section}{\numberline {5}Use of Reference Architectures and Frameworks}{14}{section.5}
+\contentsline {subsubsection}{\numberline {5.0.1}Example Of Architecture Frameworks}{15}{subsubsection.5.0.1}
+\contentsline {subsubsection}{\numberline {5.0.2}Why Use Reference Architectures?}{15}{subsubsection.5.0.2}
+\contentsline {subsubsection}{\numberline {5.0.3}Disadvantages Of Using Reference Architectures}{16}{subsubsection.5.0.3}
+\contentsline {section}{\numberline {6}Access and Integration Channels}{16}{section.6}
+\contentsline {subsubsection}{\numberline {6.0.4}Huamn access channels }{16}{subsubsection.6.0.4}
+\contentsline {subsubsection}{\numberline {6.0.5}System access channels }{17}{subsubsection.6.0.5}
+\contentsline {subsubsection}{\numberline {6.0.6}Integration channels }{17}{subsubsection.6.0.6}
+\contentsline {section}{\numberline {7}Technologies}{18}{section.7}
+\contentsline {section}{\numberline {8}References}{18}{section.8}
