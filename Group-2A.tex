@@ -60,10 +60,8 @@ This document sets out the software architecture design requirements for the COS
 High-level architectural patterns, or styles, are often associated with the architectural design process, patterns such as layered architecture, component-based architecture, model-view-controller, and the pipes and filters pattern (MICROSOFT DEVELOPER NETWORK, n.d.).
 \\
 \\These architectural patterns can be used to promote certain quality requirements from which a range of benefits can be obtained. A software system can incorporate one or more the various known patterns, constraints and quality requirements. However, as will be shown in subsequent sections, typically a trade-off is required due to the fact that these entities are often not mutually compatible. This document sets out a possible architectural design for the Buzz project. 
-=======
-rala's intro goes here.....
-\\
-\\
+
+\section{Background}
 The idea behind the 'Buzz' project is to find ways to enhance teaching and improve the learning of students through the use of online discussions. The 'Buzz' will be an online forum where students can express their views on specific work topics, thus students will be able to see the work from other students perspective's and be able to discuss problems and find solutions creating an educational environment while allowing for social interactivity among students.
 
 The idea is to create a fun, rewarding and educational environment, thus students will be rewarded for participating in this online forum by being 'leveled up' according to contributions on the forum. When a student reaches a new level he/she will have more privileges such as being able to start their own thread and having access to more functionality. All users will also be able to see each other's levels - in this way we try to motivate students to 'level up' to also receive those privileges. 
@@ -71,7 +69,6 @@ The idea is to create a fun, rewarding and educational environment, thus student
 By having students communicating about work related to subjects the lecturers will also be able to view the discussions and thus see what problems and questions students have about the work and can address these again in class if needed. Lecturers on the other hand will also have a lot more privileges than students and can at any time start a new thread and discussions and so forth. 
 
 The forum needs to be user-friendly to help inexperienced users to easily navigate and find their way around the forum thus it also needs to be well and logically organized. It should also raise excitement in students to want to participate in discussions or just go onto the forum and read about work covered during lectures to get a better understanding. 
-
 
 
 \section{Architecture Requirements}
@@ -94,7 +91,7 @@ A brief study of quality requirements in software engineering has shown that man
 \subsubsection{Usability}
 \begin{itemize}
 	\item \textbf{Core requirement: value = 1}
-	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern 
+	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern, included within the first tier of a three-tier layered system
 	\item Usability involves measuring users’ performance with regard to the use of a software system (ROGERS, SHARP, PREECE, 2011). From the client’s briefing document (PIETERSE, 2015) it is clear that usability is a key requirement in the design of the Buzz discussion board: the more usable the discussion board, the more likely the chance that students will be using it and benefitting from the experience. If the discussion board proves not to be usable, then all other core requirements fall by the wayside. During the design phase usability can be accommodated for, amongst others, by means of prototype testing (eg. through the use of either, or both, high and low fidelity prototype designs used to gain experimental feedback from a sample of the future end-user group) (ROGERS, SHARP, PREECE, 2011). Usability for the discussion forum project can be measured, for example, in terms of numbers of students using the site at the start of the semester, compared to the drop-off rate a few weeks later. Whilst a natural drop-off rate may be due to other factors and can be expected, if the system is perceived to be lacking in usable design, this drop-off rate would be more pronounced. The use of a three-tier layered architectural pattern, in conjunction with the model-view-Controller (MVC) pattern could be considered to aid in usability design. The layered system will help to separate out the presentation tier, the logic tier and the data / persistence tier. The layered pattern, thus, establishes an effective separation of concerns between the presentation logic, business logic and data access logic. The MVC also results in a separation of concerns: the view (client-side) can be handled independently from the model or controller. This separation of responsibilities allows flexibility. The user interface can therefore be developed independently. 
 \end{itemize}
 
@@ -102,7 +99,7 @@ A brief study of quality requirements in software engineering has shown that man
 \subsubsection{Performance}
 \begin{itemize}
 	\item \textbf{Core requirement: value = 2}
-	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern, with the inclusion of the pipes and filters pattern into the second tier of the layered pattern
+	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern, with the inclusion of the pipes and filters pattern into the second tier of a three-tier layered system
 	\item Performance refers to run-time efficiency. The Buzz discussion board is not expected to be carrying a heavy performance load since users login sporadically. However, performance is impacted on by architectural design because communication between systems can often take longer than computation (ALENCAR, COWAN, 2012). The use of asynchronous communication between systems (achieved, for example, by means of the AJAX technology) should be considered so as to reduce the time it takes to load a web page and prevent users from becoming frustrated waiting too long for a page to load. Load, stress, soak, spike and configuration testing could be employed to determine the performance metric of the Buzz system. In terms of a suitable architectural design pattern, the model-view controller architectural pattern, again, combined with the layered pattern, could be the most suitable due to the use of a dedicated, high-performance subsystem, as provided by the separation of concerns, providing services that can be requested by other subsystems or components throughout the network (KUNG, 2014). The layered pattern helps to separate the presentation logic from the business logic and the data access logic so that one system is not unnecessarily dependent upon another and thus undermining performance. The pipe and filters pattern, embedded into the business logic layer of the layered system, can also help with performance improvement (as well as scalability and reusability). Through the pipes and filters pattern one decomposes the processing required for each stream into a set of discrete components (or filters), each of which performs a single task (MICROSOFT DEVELOPER NETWORK, n.d.). 
 \end{itemize}
 
@@ -110,7 +107,7 @@ A brief study of quality requirements in software engineering has shown that man
 \subsubsection{Availability}
 \begin{itemize}
 	\item \textbf{Core requirement: value = 3}
-	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern 
+	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern, included within the first tier of a three-tier layered system
 	\item Availability refers to the probability that a software product will be operating as expected when requested for use (RELIASOFT CORPORATION, 2003). In this case, the Buzz discussion forum needs to be made available more or less 20 -24 hours a day during semester times so as to prevent loss of information dissemination or frustration with a system that can’t be accessed. Note: availability can be applied to both a spatial and temporal realm (i.e. it can also refer to accessibility of the software system via different platforms (ALENCAR, COWAN, 2012). In our networked society it would not be unreasonable for users to expect to be able to access the discussion forum via various means, eg. desktop, smartphone or tablet availability, with an emphasis on mobile devices as the update of these are expected to increase in future. However, for the purposes of this document, the emphasis would be on availability as a temporal requirement, rather a spatial one, which could be considered a nice-to-have quality requirement. The emphasis here is therefore on availability in time as a core requirement. Availability of the Buzz system could be measured in terms of the number of hours a day / week / month that the system is available online, or the amount of downtime that occurs, and its impact on access to the site. By ensuring that the system is integrable, modular and flexible, available should be easier to achieve. The separation of concerns  afforded by the three-tier layered system and the MVC should aid in this regard. 
 \end{itemize}
 
@@ -172,7 +169,8 @@ errors that will make the system unstable after the addition of new features. Bu
 \subsubsection{Flexibility}
 \begin{itemize}
 	\item \textbf{Important requirement}
-	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern 
+	\item \textbf{Architectural pattern associated with this requirement:} Layered
+		architectural pattern in conjunction with the microkernel pattern, included within the second level of a three-tier layered system
 	\item Security can be seen as a conflicting requirement when compared with usability (eg. additional login and verification required by the user) (ALENCAR, COWAN, 2012). However, for this project, unregistered, unauthorised users should not be able to access the system so as to prevent malicious activity. Since most users of the Computer Science Department’s website tend to be logged into the system already, this security aspect should not be much of an issue. With regard to system security, the provision of an interface for the application of security updates could be considered (this can be designed to be automated). The degree of security in the Buzz system could be tested for by counting the number of security bugs/flaws/attacks against the system over time. The three-tier layered system will help to improve security by separating out the data logic tier from the presentation and business logic tiers.
 \end{itemize}
 
@@ -181,24 +179,23 @@ errors that will make the system unstable after the addition of new features. Bu
 \begin{itemize}
 	\item \textbf{Important requirement}
 	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern 
-	\item Auditability is the ability of an application to show what has happened to it, who did it and when (in other words, an audit trail of  transaction changes, before/after pictures, etc.) ( N.p., 2015. Web. 10 Mar. 2015.). Auditability includes requirements for effective date stamping. 
+	\item Auditability is the ability of an application to show what has happened to it, who did it and when (in other words, an audit trail of  transaction changes, before/after pictures, etc.). Auditability includes requirements for effective date stamping. 
 	\item For example, in the Buzz system, it will be necessary to know who created a thread, when was it created, who deleted it and why. The MVC architecture pattern can come in handy here since it supports synchronised views on the same data. Thus, when a thread is deleted or commented on, everybody associated with it must be in synch with the changes made.
 \end{itemize}
-
-
-
-\subsubsection{Extensibility}
-\textbf{Nice-to-have requirement}
-\\
-\\Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.       
 
 
 \subsubsection{Extensibility}
 \begin{itemize}
 	\item \textbf{Nice-to-have requirement}
-	\item Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.       
-\end{itemize}
-                           
+	\item \textbf{Architectural pattern associated with this requirement:} Layered
+	architectural pattern in conjunction with the microkernel pattern, included within the second level of a three-tier layered system
+	\item Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on
+	its internal structure and data flow (JOHANSSON, LFGREN, OLSSON,2009). Extensibility evaluation therefore focuses on how new features,
+	originated from either customers demands or new emerging technologies, could easily be developed and exploited in established systems without
+	losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added with-
+	out adversely affecting existing abilities. The layered system allows for separation of concerns, which means that it should be possible to add additional features to the system without adversely affecting the rest of the system. The microkernel pattern helps to achieve pluggability, which will help when it comes to adding additional features.
+\end{itemize}                
+           
 
 \subsubsection{Cost}
 \textbf{Nice-to-have requirement}

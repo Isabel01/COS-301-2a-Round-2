@@ -1,0 +1,504 @@
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.2.16)  10 MAR 2015 14:36
+entering extended mode
+**Group-2A.tex
+(C:\Users\cadebe\Documents\GitHub\COS-301-2a-Round-2\Group-2A.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count91
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen104
+Requested font "pzdr" at 0.00002pt
+\Fld@menulength=\count92
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box26
+\c@Hy@AnnotLevel=\count96
+\HyField@AnnotCount=\count97
+\Fld@listcount=\count98
+\c@bookmark@seq@number=\count99
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip43
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2013/04/29 v0.96 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+
+Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
+
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks15
+\float@box=\box27
+\@float@everytoks=\toks16
+\@floatcapt=\box28
+)
+(C:\Users\cadebe\Documents\GitHub\COS-301-2a-Round-2\Group-2A.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 34.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count101
+)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+
+(C:\Users\cadebe\Documents\GitHub\COS-301-2a-Round-2\Group-2A.out)
+(C:\Users\cadebe\Documents\GitHub\COS-301-2a-Round-2\Group-2A.out)
+\@outlinefile=\write3
+Requested font "cmr17" at 17.28pt
+Requested font "cmr12" at 12.0pt
+Requested font "cmr8" at 8.0pt
+Requested font "cmr6" at 6.0pt
+Requested font "cmmi12" at 12.0pt
+Requested font "cmmi8" at 8.0pt
+Requested font "cmmi6" at 6.0pt
+Requested font "cmsy10" at 12.0pt
+Requested font "cmsy8" at 8.0pt
+Requested font "cmsy6" at 6.0pt
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 38.
+Requested font "cmtt12" at 12.0pt
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+)
+[1
+
+]
+Requested font "cmr12" at 14.4pt
+Requested font "cmbx12" at 14.4pt
+ (C:\Users\cadebe\Documents\GitHub\COS-301-2a-Round-2\Group-2A.toc
+Requested font "cmbx10" at 10.0pt
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+)
+\tf@toc=\write4
+ [1]
+Requested font "cmti10" at 10.0pt
+Missing character: There is no “ in font cmti10!
+Missing character: There is no ” in font cmti10!
+Missing character: There is no “ in font cmti10!
+Missing character: There is no ” in font cmti10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--63
+
+ []
+
+[2]
+Requested font "cmbx12" at 12.0pt
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [3] [4]
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [5]
+[6]
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [7]
+Missing character: There is no Ö in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
+
+ []
+
+Missing character: There is no ’ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
+
+ []
+
+
+Overfull \hbox (1.32869pt too wide) in paragraph at lines 211--214
+\OT1/cmr/bx/n/10 Integration chan-nels that can be con-sid-ered for use in the 
+Buzz project 
+ []
+
+[9]
+Overfull \hbox (2.99942pt too wide) in paragraph at lines 215--216
+[]\OT1/cmr/m/n/10 The Com-puter Sci-ence(CS) Lightweight Di-rec-tory Ac-cess Pr
+o-to-col (LDAP)
+ []
+
+
+Overfull \hbox (1.32869pt too wide) in paragraph at lines 219--220
+\OT1/cmr/bx/n/10 Integration chan-nels that can be con-sid-ered for use in the 
+Buzz project 
+ []
+
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+[10]
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+[12]
+File: layers.eps Graphic file (type eps)
+ <layers.eps>
+File: mvc.eps Graphic file (type eps)
+ <mvc.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+
+ []
+
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+Missing character: There is no – in font cmr10!
+[13]
+Missing character: There is no – in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--335
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 338--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--349
+
+ []
+
+[15]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 351.
+
+Requested font "cmsl10" at 10.0pt
+Missing character: There is no • in font cmsl10!
+[16]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 378.
+
+[17]
+Missing character: There is no – in font cmr10!
+Missing character: There is no ‘ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+
+(C:\Users\cadebe\Documents\GitHub\COS-301-2a-Round-2\Group-2A.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 423.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 423.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
+ ) 
+Here is how much of TeX's memory you used:
+ 8147 strings out of 429025
+ 112638 string characters out of 3167800
+ 179513 words of memory out of 3000000
+ 11390 multiletter control sequences out of 15000+200000
+ 9123 words of font info for 32 fonts, out of 3000000 for 9000
+ 912 hyphenation exceptions out of 8191
+ 30i,8n,45p,1892b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Group-2A.pdf (20 pages).
