@@ -208,27 +208,25 @@ errors that will make the system unstable after the addition of new features. Bu
 \\The application of reusable components could be considered in the design of this project. A library of reusable components could be set up and used to implement sections of the project. The advantage of reusable components means that components that have been tested for reliability, usability etc., can be integrated into the existing project, thereby reducing time and cost risk.
 
 \subsection{Integration and Access Channel Requirements}
-In this section we are looking at the Integration channels between the different systems that will make up the Buzz system. The integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these access channels we need to look at the different access channels that we have available to us, the protocols and API’s needed to create these channels as well as the quality requirements we are attempting to achieve through the use of these integration channels.
-\\
-\\\textbf{Integration channels that can be considered for use in the Buzz project}
+This section considers the integration channels between the different systems that will make up the Buzz system. Integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these
+access channels it is required that the different access channels available are considered, the protocols and APIs needed to create these channels as well as the previously stipulated quality requirements for attempting to achieve through the use of these integration channels.
+
+\subsubsection{Integration channels that can be considered for use in the Buzz project}
 \begin{itemize}
 	\item The Computer Science (CS) Lightweight Directory Access Protocol (LDAP) repository could be used to retrieve student details and class lists.
 	\item The Computer Science (CS) MySQL database could be used to access module information from the database
 	\item Details regarding the integration with the databases can be obtained from the tech team 
-\end{itemize}
-\textbf{Integration channels that can be considered for use in the Buzz project}
-\begin{itemize}
 	\item HTTPS (Hypertext Transfer Protocol Secure) is a protocol that allows safe and secure transfer of data over a network. It could be used to transfer the SOAP messages between the two systems.
 	\item SOAP (Simple Access Project Protocol) allows programs that run on different operating system to communicate using HTTP and XML. It is platform and language independent, It is useful in handling asynchronous processing and it supports many protocols and technologies.
 	\item LDAP (Lightweight Directory Access Protocol) is typically  used to authenticate a user’s details, in this case, lecturer’s, teaching assistant’s or student’s credentials when logging in. LDAP can also be used to retrieve a student’s personal details, to retrieve courses a student is taking and also used to retrieve a class list for a specific module.
 \end{itemize}
-\textbf{API specifications used in the integration of the systems}
+\subsubsection{API specifications used in the integration of the systems}
 \begin{itemize}
 	\item JPA (Java Persistence API) reduces interaction with the database and it makes use of ORM to convert data from object type to relational type and vice versa. ORM maps objects to its data in the database.
 	\item JPQL (Java Persistence Query Language) creates queries against entities to store in a relational database.
 	\item JSF (JavaServer Faces) enables reuse and extension of existing standard UI components. Its based on mvc architecture for separating logic.
 \end{itemize}
-\textbf{Quality requirements that can be achieved through the implementation of the access channels mentioned}
+\subsubsection{Quality requirements that can be achieved through the implementation of the access channels mentioned}
 \begin{itemize}
 	\item Reliability so that the system is online as much as possible and that data transfer isn’t easily corruptible and that the transfer is fast.
 	\item Security of user data being transferred.
@@ -311,34 +309,50 @@ Using the Layering pattern will improve on the following non-functional requirem
 This section describes the Architectural tactics/strategies which are the conscious design decisions that will influence how the quality requirements are realized in the system. Listed below are the architectural tactics/strategies that we chose to implement in our system as well as which quality requirements they influence and how we plan on implementing them in our system. 
 
 \subsection{Course grained services}
-\\We will be looking at using course grained services to help realize the performance, scalability, reliability, integrability, reusability, testability and affordability of the system. Coarse grained services is when you group together smaller components and or functions and present it to the user as one big service. This helps with reliability since the users of the system don’t have access to all the smaller private functions, also you can add as many systems as needed since they all will likely just need access to the coarse grained services instead of all the functions the system has to offer.
-This strategy will be realized through the construction of the code. Instead of just writing multiple smaller functions we would also write a wrapper functions to encapsulate some of the other functions to make the course grained services. 
-
+We will be looking at using course grained services to help realise the performance of the system. 
+\\
+\\Coarse grained services is when you group together smaller components and or functions and present it to the user as one big service. This helps with reliability since the users of the system don’t have access to all the smaller private functions, also you can add as many systems as needed since they all will likely just need access to the coarse grained services instead of all the functions the system has to offer.
+\\
+\\This strategy will be realised through the construction of the code. Instead of just writing multiple smaller functions we would also write a wrapper functions to encapsulate some of the other functions to make the course grained services. 
+\\
 \subsection{Persistent messaging}
-\\The second tactic that we will use is Persistent messaging to help realize scalability, reliability, auditability, integrability, flexibility and maintainability. It also negatively affects performance, affordability and deployment. Persistent messaging is when the messages that are being passed between the systems are sored to disk when send until all the participants have responded that they have received the message. This is done to ensure that the messages will still be delivered even if one of the integration channels breakdown.
-This strategy will be realized through the use of a dedicate message broker to facilitate the storage and transfer of messages between the systems. 
-
+The second tactic that we will use is persistent messaging to help realise scalability. 
+\\
+\\Persistent messaging is when the messages that are being passed between the systems are sored to disk when send until all the participants have responded that they have received the message. This is done to ensure that the messages will still be delivered even if one of the integration channels breakdown.
+\\
+\\This strategy will be realised through the use of a dedicate message broker to facilitate the storage and transfer of messages between the systems. 
+\\
 \subsection{Request/connection dropping}
-\\The third tactic that we will be using is Request/connection dropping. This tactic will help to realize scalability, reliability and security. Request/connection dropping is when the connection is closed as soon as the request has been handled in order to lower the network traffic being generated. This allows for more users to use the system at the same time as well as ensures security since if there is no open connections remaining open the risk of someone hacking into a part of the system housing confidential user data is drastically reduces. 
-This strategy will be realised through the use of asynchronous threads that close the connection from the client’s side as soon as all the data has been received or from the server’s side if it is going to take a long time to get the data ready for transfer. Then the connection is opened again when the data is ready to be transferred to the client. 
-
+The third tactic that we will be using is Request/connection dropping. This tactic will help to realise security in the system.
+\\
+\\ Request/connection dropping is when the connection is closed as soon as the request has been handled in order to lower the network traffic being generated. This allows for more users to use the system at the same time as well as ensures security since if there is no open connections remaining open the risk of someone hacking into a part of the system housing confidential user data is drastically reduces. 
+\\
+\\This strategy will be realised through the use of asynchronous threads that close the connection from the client’s side as soon as all the data has been received or from the server’s side if it is going to take a long time to get the data ready for transfer. Then the connection is opened again when the data is ready to be transferred to the client. 
+\\
+\subsection{Queueing}
+Another tactic that we will be using is Queueing. This will help realise the Integratability of the system.
+\\
+\\Queueing is when you queue the systems requests to the server in an attempt to allow the server to just work on one request at a time making it possible to handle requests faster than when it is dividing its attention between multiple requests. By queueing the request any system can send its request and it will be placed into the queue with the other requests. Each system doesn’t need to remotely access the server they only access the queue. 
+\\
+\\We will realised this tactic by making use of a queueing system such as FIFO to buffer the server requests until the server is able to handle the next one. 
+\\
 \subsection{Ping/echo}
-\\A tactic will be using to recognise faults is Ping/echo. This will help  realise the availability of the system.
+A tactic will be using to recognise faults is Ping/echo. This will help  realise the availability of the system.
 \\A fault has the potential to cause a failure and recovery is an important aspect of availability. This tactic prevents faults from becoming a failure. It also allows for one component to issue a ping message and expects to receive back an echo from another component within a predefined time.
 \\we will use this tactic within a group of components that are mutually responsible for one task. It can also be used by clients to ensure that the server object and the communication path to the server are operating. 
 
 \subsection{Run-time}
-\\Another tactic that we will be using is the run-time tactic. This tactic will help to realize usability.
+Another tactic that we will be using is the run-time tactic. This tactic will help to realize usability.
 \\Run-time tactic is when the system is executing and the user gets continuous feedback as to what the system is doing. It gives the user the ability to issue usability commands such as cancel, undo, aggregate and a lot more.  This tactic is both user initiative and system initiative. An example of system initiative is to maintain user or system models
 \\This tactic will be realised through continuous feedback to the user which would improve usability.
 
 \subsection{Manage Input/Output}
-\\Another tactic that we will be using is managing input and output tactic. This tactic will help realize testability in the system. 
+Another tactic that we will be using is managing input and output tactic. This tactic will help realize testability in the system. 
 \\Executing a test requires input to the system and to capture the output. This is called test harness. There are three tactics in which we could manage input and output. The first tactic is record which captures information and uses it as test input. The second tactic is to separate interface from implementation. This allows substitution of implementations for various testing purposes. The last tactic is specialize access to interfaces. There is a hierarchy of test interfaces that can be applied at any level and testing functionality can observe the response of the test.
 \\This strategy will be realized through managing the inputs and outputs of the tests, where input of one component is the output of another component.
 
 \subsection{Separation of concerns}
-\\The last tactic that we will be using is separation of concerns. This tactic will help realize maintainability in the system. 
+The last tactic that we will be using is separation of concerns. This tactic will help realize maintainability in the system. 
 \\This tactic each component is only concerned with only one set of cohesive responsibilities. With this tactic, the system as a whole will become more stable and therefore increase maintainability. The increase in maintainability of the system will lead to identifying problems becoming easier and resolution becoming faster.
 \\We will realise this tactic by separating concerns like in the MVC model.
 
@@ -421,26 +435,23 @@ The access channel requirements specifies what platforms and technologies are re
 
 \section{References}
 
-\\ALENCAR, P., COWAN, D. 2012. Handbook of Research on Mobile Software Engineering: Design, Implementation, and Emergent Applications. Hershey, PA: IGI Global .\\
-
-\\Hanson, J. 2003. Coarse-grained interfaces enable service composition in SOA\\
-Available from: http://www.techrepublic.com/article/coarse-grained-interfaces-enable-service-composition-in-soa/\\
-[Accessed: 7 March 2015]\\
-
-\\JOHANSSON, N. LÖFGREN, A. OLSSON, C.M. 2009. Designing for extensibility: An action research study of maximising extensibility by means of design principles.\\
-Available from: https://gupea.ub.gu.se/bitstream/2077/20561/1/gupea_2077_20561_1.pdf+&cd=4&hl=en&ct=clnk\\
-[Accessed: 4 March 2015]\\
-
-\\KHAN. I. 2010. Address Scalability Bottlenecks with Distributed Caching.\\
-Available from:https://msdn.microsoft.com/en-us/magazine/ff714590.aspx\\
-[Accessed: 6 March 2015]\\
-
-
-
- MICROSOFT DEVELOPER NETWORK. N.d. Pipes and Filters Pattern.
+ALENCAR, P., COWAN, D. 2012. Handbook of Research on Mobile Software Engineering: Design, Implementation, and Emergent Applications. Hershey, PA: IGI Global .
+\\
+\\Hanson, J. 2003. Coarse-grained interfaces enable service composition in SOA
+\\Available from: http://www.techrepublic.com/article/coarse-grained-interfaces-enable-service-composition-in-soa/
+[Accessed: 7 March 2015]
+\\
+\\JOHANSSON, N. LÖFGREN, A. OLSSON, C.M. 2009. Designing for extensibility: An action research study of maximising extensibility by means of design principles.
+Available from: \url{https://gupea.ub.gu.se/bitstream/2077/20561/1/gupea_2077_20561_1.pdf+&cd=4&hl=en&ct=clnk}
+[Accessed: 4 March 2015]
+\\
+\\KHAN. I. 2010. Address Scalability Bottlenecks with Distributed Caching.
+\\Available from:https://msdn.microsoft.com/en-us/magazine/ff714590.aspx
+[Accessed: 6 March 2015]
+\\
+\\ MICROSOFT DEVELOPER NETWORK. N.d. Pipes and Filters Pattern.
 Available from: https://msdn.microsoft.com/en-us/library/dn568100.aspx
 [Accessed: 9 March 2015]
-
 
 
 
