@@ -58,9 +58,12 @@ This document sets out the software architecture design requirements for the COS
 \\
 \\Thus, software architecture deals as much with the design of a software system as with the decision-making process involved in determining the most optimal architectural design.
 High-level architectural patterns, or styles, are often associated with the architectural design process, patterns such as layered architecture, component-based architecture, model-view-controller, and the pipes and filters pattern (MICROSOFT DEVELOPER NETWORK, n.d.).
+\\
+\\These architectural patterns can be used to promote certain quality requirements from which a range of benefits can be obtained. A software system can incorporate one or more the various known patterns, constraints and quality requirements. However, as will be shown in subsequent sections, typically a trade-off is required due to the fact that these entities are often not mutually compatible. This document sets out a possible architectural design for the Buzz project. 
 =======
 rala's intro goes here.....
-
+\\
+\\
 The idea behind the 'Buzz' project is to find ways to enhance teaching and improve the learning of students through the use of online discussions. The 'Buzz' will be an online forum where students can express their views on specific work topics, thus students will be able to see the work from other students perspective's and be able to discuss problems and find solutions creating an educational environment while allowing for social interactivity among students.
 
 The idea is to create a fun, rewarding and educational environment, thus students will be rewarded for participating in this online forum by being 'leveled up' according to contributions on the forum. When a student reaches a new level he/she will have more privileges such as being able to start their own thread and having access to more functionality. All users will also be able to see each other's levels - in this way we try to motivate students to 'level up' to also receive those privileges. 
@@ -121,11 +124,14 @@ A brief study of quality requirements in software engineering has shown that man
 
 
 \subsubsection{Intergratibility}
-\textbf{Core requirement: value = 5}
-\\
-\\\textbf{Architectural pattern associated with this requirement:} Microkernel architectural pattern
-\\ 
-\\Integrability evaluation refers to testing separately developed components to check that they work correctly together (ALENCAR, COWAN, 2012).OR ability of this application to easily fit in as a part of a larger system.For this project it must be possible to add additional features, or to remove them, as the system develops. The system therefore needs to be integrable so that the entire system does not get disrupted as a result of the addition (or removal) of new features. This can be undertaken and measured in terms of the degree of modularisation of the software design and the lack of disruption to the main system as a result of modifications to components.To add further services to the microkernel, one only needs to add or extend an internal server hence the whole Buzz system won't be disrupted.
+\begin{itemize}
+	\item \textbf{Core requirement: value = 5}
+	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern in conjunction with the model-view-controller pattern 
+	\item Integrability evaluation refers to testing separately developed components to check that they work correctly together (ALENCAR, COWAN, 2012). Integrability can also be defined as the ability of an application to easily fit in as a part of a larger system. 
+	\item For the Buzz project it must be possible to add additional features, or to remove them, as the system develops. The project therefore needs to be integrable so that the entire system does not get disrupted as a result of the addition (or removal) of new features. Integrability can be undertaken and measured in terms of the degree of modularisation
+of the software design and the lack of disruption to the main system as a result of modifications to components.Also, the separation of concerns inherent to the layered pattern and the MVC will help to achieve this.
+\end{itemize}
+
 
 
 \subsubsection{Reliability}
@@ -151,34 +157,53 @@ A brief study of quality requirements in software engineering has shown that man
 	\item Security can be seen as a conflicting requirement when compared with usability (eg. additional login and verification required by the user) (ALENCAR, COWAN, 2012). However, for this project, unregistered, unauthorised users should not be able to access the system so as to prevent malicious activity. Since most users of the Computer Science Department’s website tend to be logged into the system already, this security aspect should not be much of an issue. With regard to system security, the provision of an interface for the application of security updates could be considered (this can be designed to be automated). The degree of security in the Buzz system could be tested for by counting the number of security bugs/flaws/attacks against the system over time. The three-tier layered system will help to improve security by separating out the data logic tier from the presentation and business logic tiers.
 \end{itemize}
 
-
 \subsubsection{Maintainability}
-\textbf{Important requirement}
-\\
-\\Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009).As for the Buzz system whenever new requirements are added as an update to the system,the system needs to remain intact without any errors that will make the system unstable after the addition of new features,and the Buzz users has to remain unaware and unaffected by server repairs,upgrade e.t.c.and for this quality requirement the MVC architecture work best because one of its benefits it's simpler maintenance.
+\begin{itemize}
+	\item \textbf{Important requirement}
+	\item \textbf{Architectural pattern associated with this requirement:} The pipe and filters pattern 
+	\item Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009). 
+	\item For the Buzz system, whenever new requirements are added as an update to the system, the system needs to remain intact without any
+errors that will make the system unstable after the addition of new features. Buzz users have to remain unaware and unaffected by server repairs, upgrade etc. 
+\item This this quality requirement can be achieved by means of the MVC architecture since one of its advantages includes ease of maintenance.hence this pattern will help us maintain the sytem easily.
+
+\end{itemize}
+
 
 \subsubsection{Flexibility}
-\textbf{Important requirement}
-\\
-\\Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009).As for the Buzz system whenever new requirements are added as an update to the system,the system needs to remain intact without any errors that will make the system unstable after the addition of new features,and the Buzz users has to remain unaware and unaffected by server repairs,upgrade e.t.c
+\begin{itemize}
+	\item \textbf{Important requirement}
+	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern 
+	\item Security can be seen as a conflicting requirement when compared with usability (eg. additional login and verification required by the user) (ALENCAR, COWAN, 2012). However, for this project, unregistered, unauthorised users should not be able to access the system so as to prevent malicious activity. Since most users of the Computer Science Department’s website tend to be logged into the system already, this security aspect should not be much of an issue. With regard to system security, the provision of an interface for the application of security updates could be considered (this can be designed to be automated). The degree of security in the Buzz system could be tested for by counting the number of security bugs/flaws/attacks against the system over time. The three-tier layered system will help to improve security by separating out the data logic tier from the presentation and business logic tiers.
+\end{itemize}
 
 
 \subsubsection{Auditability}
-\textbf{Important requirement}
-\\
-\\Ability of the application to show what has happened to it, who did it and when (audit trail, transaction changes, before/after pictures, etc.); includes requirements for effective dating,in this Buzz system we developing we need to know who created a Thread,and when was it created and who deleted it and why,and the MVC architecture pattern can come in handy as well since it supports synchronized views on the same data,when a Thread is deleted or commented on, everybody associated with it must be in synch with the changes made.
+\begin{itemize}
+	\item \textbf{Important requirement}
+	\item \textbf{Architectural pattern associated with this requirement:} Layered architectural pattern 
+	\item Auditability is the ability of an application to show what has happened to it, who did it and when (in other words, an audit trail of  transaction changes, before/after pictures, etc.) ( N.p., 2015. Web. 10 Mar. 2015.). Auditability includes requirements for effective date stamping. 
+	\item For example, in the Buzz system, it will be necessary to know who created a thread, when was it created, who deleted it and why. The MVC architecture pattern can come in handy here since it supports synchronised views on the same data. Thus, when a thread is deleted or commented on, everybody associated with it must be in synch with the changes made.
+\end{itemize}
+
 
 
 \subsubsection{Extensibility}
 \textbf{Nice-to-have requirement}
 \\
 \\Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.       
+
+
+\subsubsection{Extensibility}
+\begin{itemize}
+	\item \textbf{Nice-to-have requirement}
+	\item Extensibility can be defined as the ability of a system to be extended to include new functionalities, but with minimal or no adverse effects on its internal structure and data flow (JOHANSSON, LÖFGREN, OLSSON, 2009).  Extensibility evaluation therefore focuses on how new features, originated from either customers’ demands or new emerging technologies, could easily be developed and exploited in established systems without losing existing capabilities. The discussion forum can be considered to be extensible if additional features and functionalities can be added without adversely affecting existing abilities.       
+\end{itemize}
                            
 
 \subsubsection{Cost}
 \textbf{Nice-to-have requirement}
 \\
-\\The use of Agile methods as part of the design process could help to speed up the time it takes to develop the software, and the associated time and execution cost.The application of reusable components could help to bring down time and cost issues. 
+\\The use of Agile methods as part of the design process could help to speed up the time it takes to develop the software, and the associated time and execution cost. The application of reusable components could help to bring down time and cost issues.modularisation can help to control costs.If the system is highly modularised, testability of the system as a whole should become easier as a result individual unit testing. If it is easier to test the system, through the use of modularisation and separation of concerns, less time and money could be spent on solving problems, integrating new features or maintaining the existing system.
 
 \subsubsection{Reusability }
 \textbf{Nice-to-have requirement}
@@ -390,5 +415,12 @@ The access channel requirements specifies what platforms and technologies are re
 \section{Technologies}
 
 \section{References}
+
+ MICROSOFT DEVELOPER NETWORK. N.d. Pipes and Filters Pattern.
+Available from: https://msdn.microsoft.com/en-us/library/dn568100.aspx
+[Accessed: 9 March 2015]
+
+
+
 
 \end{document}
