@@ -290,12 +290,15 @@ From an MVC perspective:
 \includegraphics[width=\textwidth]{mvc.eps}
 \caption{MVC architecture pattern diagram \label{overflow}}
 \end{figure}                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                   t
-\\
-                           
-The integration between these layers will be in the form of APIs that each layer will provide to the layer directly above it.
-                                                                                                                                      
+                                                                                                                                                                                       The integration between these layers will be in the form of APIs that each layer will provide to the layer directly above it.
 
+The layering pattern could also be described in such a way that different layers are implemented using other architectural patterns. Below is a diagram with the layering pattern using MVC in the presentation layer, pipes & filters and micro-kernel in the business logic layer and the persistence layer.
+
+\begin{figure}[H]                                                                                                                                               
+\includegraphics[width=\textwidth]{layers_2.png}
+\caption{Layered pattern with other architectural patterns \label{overflow}}
+\end{figure} 
+																																													   
 Using the Layering pattern will improve on the following non-functional requirements:
 \begin{itemize}
 			\item Pluggability – different services can be tracked easily on the different layers, and can be replaced without compromising the whole system.
