@@ -62,13 +62,11 @@ High-level architectural patterns, or styles, are often associated with the arch
 \\These architectural patterns can be used to promote certain quality requirements from which a range of benefits can be obtained. A software system can incorporate one or more the various known patterns, constraints and quality requirements. However, as will be shown in subsequent sections, typically a trade-off is required due to the fact that these entities are often not mutually compatible. This document sets out a possible architectural design for the Buzz project. 
 
 \section{Background}
-The idea behind the 'Buzz' project is to find ways to enhance teaching and improve the learning of students through the use of online discussions. The 'Buzz' will be an online forum where students can express their views on specific work topics, thus students will be able to see the work from other students perspective's and be able to discuss problems and find solutions creating an educational environment while allowing for social interactivity among students.
-
-The idea is to create a fun, rewarding and educational environment, thus students will be rewarded for participating in this online forum by being 'leveled up' according to contributions on the forum. When a student reaches a new level he/she will have more privileges such as being able to start their own thread and having access to more functionality. All users will also be able to see each other's levels - in this way we try to motivate students to 'level up' to also receive those privileges. 
-
-By having students communicating about work related to subjects the lecturers will also be able to view the discussions and thus see what problems and questions students have about the work and can address these again in class if needed. Lecturers on the other hand will also have a lot more privileges than students and can at any time start a new thread and discussions and so forth. 
-
-The forum needs to be user-friendly to help inexperienced users to easily navigate and find their way around the forum thus it also needs to be well and logically organized. It should also raise excitement in students to want to participate in discussions or just go onto the forum and read about work covered during lectures to get a better understanding. 
+The Computer Science Education Didactic and Applications Research (CSEDAR) team of the Computer Science Department of the University of Pretoria has expressed the need for the creation of an online discussion forum as part of an on-going research project entitled The use of Online Discussions in Teaching (TODT) (PIETERSE, 2015). The intention behind the discussion forum, called Buzz, is that it will be used within a tertiary setting as part of the education experience of students enrolled for modules at the Computer Science Department at the University of Pretoria. 
+\\
+\\Buzz is intended to be an online forum where students should be able to express their views on any specific work topic, thereby allowing them to see the work from other students’ perspective and be able to discuss problems and find solutions within an educational environment whilst allowing for social interactivity within the cohort. The idea is to create a fun, rewarding and educational environment where students will be rewarded for participation through the concept of gamification. In other words, students should be able to score points relative to their level of contribution on the forum. When a student reaches a new level he/she should be able to obtain more privileges, such as being able to start their own thread and having access to more functionality. All users will be able to see each other's score levels and be motivated to 'level up' in order to also receive such privileges.
+\\
+\\By having students communicating about work related to subjects the lecturers should also be able to view the discussions and see what problems and questions students have about the work and can address these again in class if needed. Lecturers, on the other hand, should be granted  more privileges than students and should be able to start a new thread, a new discussion, be able to manage the discussion board etc. The client has expressed a strong desire for the forum to be user-friendly in order to help inexperienced users to easily navigate and find their way around the forum. In other words, it is essential for the software interface to be well structured and logically organised. It should also raise excitement in students to want to participate in discussions or just go onto the forum and read about work covered during lectures to get a better understanding.
 
 
 \section{Architecture Requirements}
@@ -134,7 +132,7 @@ of the software design and the lack of disruption to the main system as a result
 \subsubsection{Reliability}
 \begin{itemize}
 	\item \textbf{Important requirement}
-	\item \textbf{Architectural pattern associated with this requirement:} The pipe and filters pattern 
+	\item \textbf{Architectural pattern associated with this requirement:} Pipes and filters pattern (embedded into the second level of a three-tier layered system)
 	\item Whilst it may not be possible to design software that is failure and defect-free, software needs to be tested and debugged until a satisfactory level of reliability can be achieved. As such, reliability is closely related to with unit testing. The Buzz discussion forum project should therefore be able to process the same steps each time with the same predictable results, and with the fewest defects and failures possible. Software Reliability Engineering (SRE) employs a number of metrics and measures to quantify the reliability factor, such as durational reliability, transaction reliability, mean-time-to-failure (MTTF) and failure intensity ($\lambda$) (MALAIYA, n.d.). The pipe and filters pattern, embedded into the business logic layer of the layered system, can help achieving reusability by allowing task elements that perform the processing to be deployed independently
 \end{itemize}
 
@@ -157,7 +155,7 @@ of the software design and the lack of disruption to the main system as a result
 \subsubsection{Maintainability}
 \begin{itemize}
 	\item \textbf{Important requirement}
-	\item \textbf{Architectural pattern associated with this requirement:} The pipe and filters pattern 
+	\item \textbf{Architectural pattern associated with this requirement:}  Pipes and filters pattern (embedded into the second level of a three-tier layered system)
 	\item Maintainability can be defined as the design of a system to allow for the addition of new requirements without risk of introducing new errors (JOHANSSON, LÖFGREN, OLSSON, 2009). 
 	\item For the Buzz system, whenever new requirements are added as an update to the system, the system needs to remain intact without any
 errors that will make the system unstable after the addition of new features. Buzz users have to remain unaware and unaffected by server repairs, upgrade etc. 
@@ -198,14 +196,16 @@ errors that will make the system unstable after the addition of new features. Bu
            
 
 \subsubsection{Cost}
-\textbf{Nice-to-have requirement}
-\\
-\\The use of Agile methods as part of the design process could help to speed up the time it takes to develop the software, and the associated time and execution cost. The application of reusable components could help to bring down time and cost issues.modularisation can help to control costs.If the system is highly modularised, testability of the system as a whole should become easier as a result individual unit testing. If it is easier to test the system, through the use of modularisation and separation of concerns, less time and money could be spent on solving problems, integrating new features or maintaining the existing system.
+\begin{itemize}
+	\item \textbf{Nice-to-have requirement}
+	\item The use of Agile methods as part of the design process could help to speed up the time it takes to develop the software, and the associated time and execution cost. The application of reusable components could help to bring down time and cost issues.modularisation can help to control costs.If the system is highly modularised, testability of the system as a whole should become easier as a result individual unit testing. If it is easier to test the system, through the use of modularisation and separation of concerns, less time and money could be spent on solving problems, integrating new features or maintaining the existing system.
+\end{itemize}   
 
 \subsubsection{Reusability }
-\textbf{Nice-to-have requirement}
-\\
-\\The application of reusable components could be considered in the design of this project. A library of reusable components could be set up and used to implement sections of the project. The advantage of reusable components means that components that have been tested for reliability, usability etc., can be integrated into the existing project, thereby reducing time and cost risk.
+\begin{itemize}
+	\item \textbf{Nice-to-have requirement}
+	\item The application of reusable components could be considered in the design of this project. A library of reusable components could be set up and used to implement sections of the project. The advantage of reusable components means that components that have been tested for reliability, usability etc., can be integrated into the existing project, thereby reducing time and cost risk.
+\end{itemize} 
 
 \subsection{Integration and Access Channel Requirements}
 This section considers the integration channels between the different systems that will make up the Buzz system. Integration channels are the means by which the different systems communicate and transfer data between themselves in order to realize the service that the user has requested, such as logging in a user and posting a new thread for that user. To implement these
@@ -390,18 +390,18 @@ There are many benefits in using reference architectures as a guideline when dev
 \item Reduced risk - The reference architecture is bound to address most of the challenges faced by work products for a particular application domain. It is thus less likely that your architecture is inferior due to some oversight.
 \item More accessible and hence more maintainable - The reference architecture provides a standard architectural solution for your domain which is bound to be more accessible than some home-grown solution. Maintainability is improved by the reference architecture.
 \end{itemize}
-\subsubsection{Disadvantages Of Using Reference Architectures}
+\subsubsection{Disadvantages of Using Reference Architectures}
 A disadvantage focusing on using reference architectures is that one might be hindered from coming up with novel solutions which could have provided a competitive edge as now you are fixed to a specific Reference Architecture.
 
 
 \section{Access and Integration Channels}
 The access channel requirements specifies what platforms and technologies are required for the Buzz system to be accessed by users (desktop computers, laptops). As well as operating systems that the Buzz system can be accessed on. It also specifies the different networks in which the Buzz system will use for sending and receiving messages and signals.
 
-\subsubsection{Huamn access channels }
+\subsubsection{Human access channels }
 \begin{itemize}
 \item The Buzz system would be made available on platforms like desktop computers, mobile phones, laptops and tablets, it should also be operating systems independent enabling it to be accessed through various operating systems such as  windows, android, iOS, Linux etc. Therefore it can basically be accessed by any device that can connect to the internet since the Buzz system will be hosted on the internet ideally as an add-on to the website of the Department of Computer Science of the University of Pretoria. 
-\item The System needs to be able to handle multiple clients logging into the Buzz system at the same time. If there are lets say about 10 000 clients registered on the Buzz system, the system must be constructed in such a way that it can handle all of the clients logging in at the same time. Idealy to help with the traffic, the system needs to be able to host 10 times more clients logging in than what is registered. This will ensure that the operating speed and optimality of the system is of such a state that it would be fast and efficient to use for the clients, ensuring the best service the system can provide.
-\item The system is required to be of high quality and standard. Therefore, the system needs to comply with a few basic standards for example  since it is a web page we will have to validate our page to comply with all HTML 5 standards. 
+\item The System needs to be able to handle multiple clients logging into the Buzz system at the same time. If there are lets say about 10 000 clients registered on the Buzz system, the system must be constructed in such a way that it can handle all of the clients logging in at the same time. Ideally to help with the traffic, the system needs to be able to host 10 times more clients logging in than what is registered. This will ensure that the operating speed and optimality of the system is of such a state that it would be fast and efficient to use for the clients, ensuring the best service the system can provide.
+\item The system is required to be of high quality and standard. Therefore, the system needs to comply with a few basic standards for example  since it is a web page we will have to validate our page to comply with all HTML5 standards. 
 \item Our system thus also needs to be browser independent to ensure users can access the system not only from any device but also from any browser of their choice making it not only a quality system but also a convenient system.
 
 \item The Buzz system would need to integrate with various software for example :
@@ -436,6 +436,22 @@ The access channel requirements specifies what platforms and technologies are re
 
 \section{Technologies}
 
+The following is a list of proposed technologies for the Buzz system:
+
+\begin{itemize}
+\item Linux (Operating System)
+\item Git (Version Control System)
+\item JavaEE (Java Platform Enterprise Edition)
+\item JPA (Java Persistence API)
+\item JPQL (Java Persistence Query Language)
+\item JSF (Java Server Faces)
+\item Maven
+\item HTML5 (Hypertext Markup Language)
+\item AJAX (Asynchronous JavaScript and XML)
+\item CSS (Cascading Style Sheets)
+\item JavaScript
+\end{itemize}
+
 \section{References}
 
 ALENCAR, P., COWAN, D. 2012. Handbook of Research on Mobile Software Engineering: Design, Implementation, and Emergent Applications. Hershey, PA: IGI Global .
@@ -447,10 +463,6 @@ ALENCAR, P., COWAN, D. 2012. Handbook of Research on Mobile Software Engineering
 \\JOHANSSON, N. LÖFGREN, A. OLSSON, C.M. 2009. Designing for extensibility: An action research study of maximising extensibility by means of design principles.
 Available from: \url{https://gupea.ub.gu.se/bitstream/2077/20561/1/gupea_2077_20561_1.pdf+&cd=4&hl=en&ct=clnk}
 [Accessed: 4 March 2015]
-\\
-\\KHAN. I. 2010. Address Scalability Bottlenecks with Distributed Caching.
-\\Available from:https://msdn.microsoft.com/en-us/magazine/ff714590.aspx
-[Accessed: 6 March 2015]
 \\
 \\KUNG, D. 2014. \textit{Object-oriented software engineering.} New York:McGraw-Hill International Edition.
 \\
@@ -474,8 +486,25 @@ Available from: https://msdn.microsoft.com/en-us/library/dn568100.aspx
 \\Available from:  \url{http://docs.oracle.com/cd/E19226-01/821-0027/aeojo/index.html}
 [Accessed: 7 March 2015]
 \\
-\\RELIASOFT CORPORATION. 2003. Reliability hotwire.
+\\PIETERSE, V. 2015.\textit{ COS301: Mini project Buzz.} In: Lecture notes issued online. University of Pretoria. Pretoria, South Africa
+\\
+\\RELIASOFT CORPORATION. 2003. Reliability Hotwire.
 \\Available from: \url{http://www.weibull.com/hotwire/issue26/relbasics26.htm}
 [Accessed: 3 March 2015]
+\\
+\\ROGERS, Y., SHARP, H., PREECE, J. 2011.\textit{ Interaction design: Beyond human-computer interaction.} Chichester: John Wiley & Sons Ltd.
+\\
+\\VOAS, J. 2002. Software Testability,\textit{ Encyclopedia of Software Engineering}
+Available from:\textit{ http://onlinelibrary.wiley.com/doi/10.1002/0471028959.sof357/full}
+[Accessed: 4 March 2015]
+\\
+\\WEINSTOCK, C. B., GOODENOUGH, J. B. 2006. \textit{On System Scalability. }
+Available from: \textit{www.sei.cmu.edu/reports/06tn012.pdf}
+[Accessed: 3 March 2015]
+\\
+\\Non-functional requirements(Quality Requirements)
+Available from:\textit{ https:// http://wiki.ihris.org/wiki/Non-functional_Requirements }
+[Accessed: 5 March 2015]
+
 
 \end{document}
